@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+.loginWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.loginWrap .center {
+  display: flex;
+  justify-content: center;
+  width: 950px;
+}
+.loginWrap .center .formWrap {
+  width: 50%;
+  border: 1px solid #f8f8f8;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 25px 0 0 25px;
+}
+.loginWrap .center .formWrap h3 {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 24px;
+  color: #232323;
+}
+.loginWrap .center .formWrap .regi_title {
+  text-align: center;
+  margin-top: 55px;
+}
+.loginWrap .center .formWrap .pathWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+.loginWrap .center .formWrap .pathWrap a {
+  display: block;
+  width: 90px;
+  text-align: center;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 15px 0 0 15px;
+  color: #232323;
+}
+.loginWrap .center .formWrap .pathWrap a.on {
+  color: #7A060B;
+}
+.loginWrap .center .formWrap .pathWrap a:last-child {
+  border-radius: 0 15px 15px 0;
+}
+.loginWrap .center .formWrap form input {
+  width: 375px;
+  height: 50px;
+  margin-bottom: 23px;
+  margin-left: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+.loginWrap .center .formWrap form button {
+  width: 140px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 33px;
+  font-size: 14px;
+  background-color: #7A060B;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.loginWrap .center .formWrap .path_regi {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.loginWrap .center .formWrap .path_regi a {
+  color: #999;
+}
+.loginWrap .center .formWrap .path_login {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.loginWrap .center .formWrap .path_login a {
+  color: #999;
+}
+.loginWrap .center .left_imgWrap img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0 25px 25px 0;
+}

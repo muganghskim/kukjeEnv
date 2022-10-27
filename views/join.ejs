@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" href="/css/loginwrap.css">
+</head>
+<body>
+    <div class="loginWrap">
+        <div class="center">
+            <div class="formWrap">
+                <h3 class="regi_title">Create an account</h3>
+                <div class="pathWrap">
+                    <a href="/login">LOGIN</a>
+                    <a class="on" href="/join">REGISTER</a>
+                </div>
+                <form action="/addjoin" method="post">
+                    <input id="username" type="text" name="username" placeholder="Name">
+                    <input id="userid" type="text" name="userid" placeholder="ID">
+                    <input id="userpass" type="password" name="userpass" placeholder="Password">
+                    <button type="submit">REGISTER</button>
+                </form>
+                <p class="path_login">Already a member? <a href="/login">Login here</a></p>
+            </div>
+            <div class="left_imgWrap">
+                <img src="/img/login.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

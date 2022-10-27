@@ -1,0 +1,139 @@
+
+<%- include("common/header") %>
+<div class="title_img">
+    <div class="center_title">
+        <h2>ABOUT US</h2>
+        <p>Index / About Us</p>
+    </div>
+</div>
+<div class="intro_housing">
+    <div class="center">
+        <video src="/img/vid1.mp4" muted controls autoplay="false"></video>
+        <div class="right_welcome">
+            <h3>Welcome to housing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel imperdiet tortor. Cras nunc elit, placerat id molestie ac, viverra nec augue. Sed id rutrum est. Morbi ac ligula mi. Donec posuere nisl id nunc sagittis, viverra molestie dui ultrices. Aliquam et neque porta velit efficitur feugiat ac ut lorem. Vestibulum eget magna id nunc ornare pharetra.</p>
+            <p>Vivamus suscipit in enim eu scelerisque. Nullam quam elit, scelerisque id egestas eu, mattis et tellus. Curabitur et rutrum diam. Fusce orci mi, dignissim non quam nec, condimentum dictum ante. Aenean vitae scelerisque est. Vestibulum quis ligula id mi ullamcorper imperdiet quis ut tellus. </p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+</div>
+<div class="intro_choose">
+    <div class="center">
+        <h2>WHY CHOOSE US</h2>
+        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <div class="choose_listWrap">
+            <% for(let i = 0; i < 9; i++){ %>
+                <div class="choose_list">
+                    <div class="choose_icon">
+                        <img src="/img/c_icon<%- i+1 %>.png">
+                        <p><%- "0" + (i+1) %></p>
+                    </div>
+                    <div class="choose_context">
+                        <h3>Integer sit amet tincidunt</h3>
+                        <p>Nullam quam elit, scelerisque id egestas eu, sed elementum risus ante non nulla. Quisque lorem enim, bibendum vitae finibus nec</p>
+                        <a href="#">Read More...</a>
+                    </div>
+                </div>
+            <% } %>
+            <a class="load_more" href="#">Read More</a>
+        </div>
+    </div>
+</div>
+<div class="intro_testimonial">
+    <div class="center">
+        <h2>OUR TESTIMONIAL</h2>
+        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <div class="testimonialWrap">
+            <div class="view">
+                <% for(let i = 0; i < 3; i++){ %>
+                    <div class="slide">
+                        <div class="context">
+                            <p>mattis et tellus. Curabitur et rutrum diam. Fusce orci mi, dignissim non quam nec, condimentum dictum ante. Aenean vitae scelerisque est. Vestibulum quis ligula id mi ullamcorper imperdiet quis ut tellus. Praesent turpis lorem</p>
+                        </div>
+                        <div class="person">
+                            <img src="/img/person<%- i+1 %>.png">
+                            <p>Maria Blank<br>Office Manager</p>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+            <ul class="dotBtn">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="intro_agent">
+    <div class="center">
+        <h2>OUR AGENT</h2>
+        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <div class="agent_listWrap">
+            <% for(let i = 0; i < 3; i++){ %>
+                <div class="agent_list">
+                    <div class="agent_imgWrap">
+                        <img src="/img/ag_<%- i+1 %>.jpg">
+                    </div>
+                    <div class="list_context">
+                        <p>SUPPORT MANAGER</p>
+                        <h3>Karen Paran</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-envelope"></i> rhgustmfrh@naver.com</li>
+                            <li><i class="fa-solid fa-phone"></i> +82 41x-8191-8151</li>
+                            <li><i class="fa-brands fa-swift"></i> sales.carshop</li>
+                        </ul>
+                    </div>
+                </div>
+            <% } %>
+        </div>  
+    </div>
+</div>
+<%- include("common/footer") %>
+<script>
+    //기능에 필요한 변수 세팅
+    let loadBtn = document.querySelector(".load_more"); // 상품 더보기 버튼
+    let boxList = document.querySelectorAll(".choose_list"); // 상품리스트 9개 div태그
+    let startIndex = 3; //반복문 초기값 세팅 변수 
+
+    loadBtn.addEventListener("click",function(e){
+        e.preventDefault();
+        //반복문으로 상품리스트 3개씩 등장하게 처리
+        for(let i = startIndex; i < startIndex+3; i++){
+
+            boxList[i].style.display = "flex"; // 상품 3개씩 display block으로 화면에 보이게 처리
+        }
+
+        startIndex = startIndex + 3; //버튼을 클릭했을 때 startIndex 변수값은 3을 더해서 갱신
+
+        //스타트인덱스 변수의 값이  박스리스트.length 값보다 크거나 같을 때 더보기 버튼은 사라짐
+        if(startIndex >= boxList.length){
+
+            loadBtn.style.display = "none";
+        }
+    });
+
+    let slider = document.querySelector(".view");
+    let circleBtn = document.querySelectorAll(".dotBtn li");
+    // 슬라이드 번호 순서값
+    let sNumber = 0;
+
+    // 동그라미 버튼들 각각 클릭시 해당 슬라이드 화면으로 넘어감
+    for(let j = 0; j < circleBtn.length; j++){
+        circleBtn[j].addEventListener("click",function(){
+            // 동그라미 버튼전원 비활성화
+            for(let k = 0; k < circleBtn.length; k++){
+                circleBtn[k].style.border = "none"
+                circleBtn[k].style.backgroundColor = "#fff";
+            }
+            circleBtn[j].style.backgroundColor = "#610509";
+            // 화면 넘어가게 처리
+            sNumber = j; // 클릭한 동그라미 순서값 sNumber에 대입!
+            slider.style.marginLeft = -100 * sNumber + "%";
+        });
+    }
+    let intro = document.querySelector(".intro");
+    intro.style.color = "brown";
+</script>
+</body>
+</html>

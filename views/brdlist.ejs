@@ -1,0 +1,42 @@
+<%- include("common/header") %>
+<div class="title_img">
+    <div class="center_title">
+        <h2>PROPERTIES GRID FULLWIDTH</h2>
+        <p>Index / Properties Grid Fullwidth</p>
+    </div>
+</div>
+<div class="gridWrap">
+    <% for(let i=0; i < brdData.length; i++){ %>
+        <div class="grid_list">
+            <div class="list_img">
+                <img src="/upload/<%- brdData[i].brdfile %>">
+                <ul class="img_top">
+                    <li class="featured">FEATURED</li>
+                    <li class="for-sale">FOR SALE</li>
+                </ul>
+                <p class="price">$32,000<span>/mo</span></p>
+            </div>
+            <div class="list_info">
+                <h3><a href="/brddetail/<%- brdData[i].brdid %>"><%- brdData[i].brdsubject %></a></h3>
+                <p><i class="fa-solid fa-location-dot"></i>123 kathal St. Tampa City</p>
+                <ul class="room_info1">
+                    <li><i class="fa-solid fa-vector-square"></i>4800 sq ft</li>
+                    <li><i class="fa-solid fa-bed"></i>3 Beds</li>
+                    <li><i class="fa-solid fa-bath"></i>2 Baths</li>
+                </ul>
+                <ul class="room_info2">
+                    <li><i class="fa-solid fa-car"></i>1 Garage</li>
+                    <li><i class="fa-solid fa-person-through-window"></i>3 Balcony</li>
+                    <li><i class="fa-solid fa-tv"></i>TV</li>
+                </ul>
+                <div class="list_bot">
+                    <p><i class="fa-solid fa-person"></i><%- brdData[i].brdauther %></p>
+                    <p><i class="fa-solid fa-calendar-days"></i><%- brdData[i].brdtime %></p>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
+<%- include("common/footer") %>
+</body>
+</html>

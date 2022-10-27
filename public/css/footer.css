@@ -1,0 +1,55 @@
+#footer .f-top {
+  display: flex;
+  justify-content: center;
+  background-color: #7A060B;
+}
+#footer .f-top .center {
+  width: 1110px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 85px;
+}
+#footer .f-top .center > div h3 {
+  margin-top: 85px;
+  margin-bottom: 38px;
+}
+#footer .f-top .center > div p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+#footer .f-top .center .f-Qlinks ul li {
+  margin-bottom: 20px;
+}
+#footer .f-top .center .f-Qlinks ul li a {
+  color: #fff;
+}
+#footer .f-top .center .subscribe ul {
+  display: flex;
+}
+#footer .f-top .center .subscribe ul li {
+  width: 45px;
+  height: 45px;
+  background-color: #610509;
+  margin-right: 5px;
+  line-height: 45px;
+  text-align: center;
+}
+#footer .f-top .center .subscribe ul li a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+#footer .f-bot {
+  display: flex;
+  justify-content: center;
+  background-color: #610509;
+}
+#footer .f-bot .center {
+  width: 1110px;
+  color: #fff;
+}
+#footer .f-bot .center .copy p {
+  text-align: center;
+  line-height: 100px;
+}

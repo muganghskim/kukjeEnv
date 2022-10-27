@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/intro.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/brdlist.css">
+    <link rel="stylesheet" href="/css/brdinsert.css">
+    <link rel="stylesheet" href="/css/brddetail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="h-top">
+            <div class="center">
+                <div class="joinWrap">
+                    <% if(!userData){ %>
+                        <a href="/login"><i class="fa-solid fa-arrow-right"></i>Login</a>
+                        <a href="/join"><i class="fa-solid fa-user"></i>Register</a>
+                    <% } else { %>
+                        <a class="username"><%- userData.joinnick %>님</a>
+                        <a class="logout" href="/logout">Logout</a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="h-bot">
+            <div class="center">
+                <h1 class="logo"><a href="/"><img src="/img/logo.png"></a></h1>
+                <ul class="gnb">
+                    <li><a href="#">Index</a></li>
+                    <li><a href="/brdlist">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a class="intro" href="/intro">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    

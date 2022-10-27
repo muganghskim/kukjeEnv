@@ -1,0 +1,64 @@
+<% if(!userData){ %>
+    <script>
+        alert("비회원은 접근할 수 없는 페이지입니다.")
+        location.href = "/login";
+    </script>
+<% } %>
+<%- include("common/header") %>
+<div class="title_img">
+    <div class="center_title">
+        <h2>CONTACT US</h2>
+        <p>Index / Contact Us</p>
+    </div>
+</div>
+<div class="contact_us">
+    <div class="center">
+        <h2>UPDATE FORM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="admininfo">
+            <div class="info_list">
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <h5>Office Address</h5>
+                <p>Goyang Road,ilsan Daehwa</p>
+            </div>
+            <div class="info_list">
+                <div><i class="fa-solid fa-phone"></i></div>
+                <h5>Phone Number</h5>
+                <p>+55 418 652 8973</p>
+            </div>
+            <div class="info_list">
+                <div><i class="fa-solid fa-envelope-open-text"></i></div>
+                <h5>Email Address</h5>
+                <p>rhgustmfrh@naver.com</p>
+            </div>
+            <div class="info_list">
+                <div><i class="fa-solid fa-globe"></i></div>
+                <h5>Web</h5>
+                <p>rhgustmfrh@naver.com</p>
+            </div>
+        </div>
+        <form class="brdInsert" enctype="multipart/form-data" action="/update" method="post">
+            <input type="hidden" name="id" value="<%- brdData.brdid %>">
+            <div class="line">
+                <% if(userData){ %>
+                <p><%- userData.joinnick %></p>
+                <% } %>
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="line">
+                <input type="text" name="subject" placeholder="Subject" value="<%- brdData.brdsubject %>">
+                <input type="text" name="number" placeholder="Number">
+            </div>
+            <textarea name="context" placeholder="Write message"><%- brdData.brdcontext %></textarea>
+            <div class="addfileWrap">
+                <label for="addfile">파일첨부</label>
+                <input id="addfile" type="file" name="uptfile">
+                <span>변경할 이미지를 첨부해 주세요.</span>
+            </div>
+            <button type="submit">UPDATE MESSAGE</button>
+        </form>
+    </div>
+</div>
+<%- include("common/footer") %>
+</body>
+</html>

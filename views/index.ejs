@@ -1,0 +1,100 @@
+
+<%- include("common/header") %>
+<div id="container">
+    <div id="cont1">
+        <div class="slideWrap swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide s1">
+                    <div class="slide-context">
+                        <h2>Amass House Find Your Home</h2>
+                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <div class="contextBtns">
+                            <a class="getStartBtn" href="#">Get Stared Now</a>
+                            <a class="moreBtn" href="#">Learn More</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="swiper-slide s2">
+                    <div class="slide-context">
+                        <h2>Amass House Find Your Home</h2>
+                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <div class="contextBtns">
+                            <a class="getStartBtn" href="#">Get Stared Now</a>
+                            <a class="moreBtn" href="#">Learn More</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="swiper-slide s3">
+                    <div class="slide-context">
+                        <h2>Amass House Find Your Home</h2>
+                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <div class="contextBtns">
+                            <a class="getStartBtn" href="#">Get Stared Now</a>
+                            <a class="moreBtn" href="#">Learn More</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="circleBtn"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="prevBtn naviBtn"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="nextBtn naviBtn"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
+    <div class="cont2">
+        <div class="center">
+            <h2></h2>
+            <p></p>
+            <div class="cont2Wrap">
+                <div class="imgWrap"><img src="/img/cont2.jpg"></div>
+                <div class="choose_listWrap">
+                <% for(let i = 0; i < 4; i++){ %>
+                    <div class="choose_list">
+                        <div class="choose_icon">
+                            <img src="/img/c_icon<%- i+1 %>.png">
+                        </div>
+                        <div class="choose_context">
+                            <h3>Integer sit amet tincidunt</h3>
+                            <p>Nullam quam elit, scelerisque id egestas eu, sed elementum risus ante non nulla. Quisque lorem enim, bibendum vitae finibus nec</p>
+                        </div>
+                    </div>
+                <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("common/footer") %>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.slideWrap', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect:"fade",
+        
+        //자동재생구간
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.circleBtn',
+            clickable:true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.nextBtn',
+            prevEl: '.prevBtn',
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+#cont1 .slideWrap {
+  width: 100%;
+  height: 800px;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context p {
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns {
+  display: flex;
+  justify-content: center;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns a {
+  display: block;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  margin-right: 5px;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns .getStartBtn {
+  width: 210px;
+  background-color: brown;
+}
+#cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns .moreBtn {
+  width: 160px;
+  border: 1px solid #fff;
+}
+#cont1 .slideWrap .swiper-wrapper .s1 {
+  background-image: url(/img/slide01.jpg);
+}
+#cont1 .slideWrap .swiper-wrapper .s2 {
+  background-image: url(/img/slide02.jpg);
+}
+#cont1 .slideWrap .swiper-wrapper .s3 {
+  background-image: url(/img/slide03.jpg);
+}
+#cont1 .swiper .circleBtn {
+  position: absolute;
+  z-index: 99;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+#cont1 .swiper .circleBtn .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+#cont1 .swiper .circleBtn .swiper-pagination-bullet-active {
+  background-color: brown;
+  opacity: 1;
+}
+#cont1 .swiper .naviBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  z-index: 98;
+  color: brown;
+  cursor: pointer;
+}
+#cont1 .swiper .prevBtn {
+  left: 50px;
+}
+#cont1 .swiper .nextBtn {
+  right: 50px;
+}

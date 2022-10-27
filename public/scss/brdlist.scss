@@ -1,0 +1,98 @@
+.gridWrap{
+    width: 1110px;
+    margin: 180px auto;
+    display: flex;
+    flex-wrap: wrap;
+    .grid_list{
+        width: 350px;
+        box-shadow: 1px 0px 4px rgba(0,0,0,0.5);
+        margin: 10px 10px;
+        .list_img{
+            position: relative;
+            
+            img{
+                width: 100%;
+                height: 235px;
+            }
+            .img_top{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                display: flex;
+                .featured{
+                    width: 90px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 30px;
+                    background-color: blueviolet;
+                    color: #fff;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+                .for-sale{
+                    width: 85px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 30px;
+                    background-color: brown;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+            }
+            .price{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                color: #fff;
+                font-weight: bold;
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+        .list_info{
+            
+            h3{
+                font-size: 20px;
+                a{
+                    color: brown;
+                }
+                margin: 0px 0 22px 20px;
+                padding-top: 25px;
+            }
+            p{
+                i{
+                    margin-right: 5px;
+                }
+                font-size: 12px;
+                margin-left: 20px;
+                margin-bottom: 26px;
+            }
+            ul{
+                margin-left: 20px;
+                display: flex;
+                li{
+                    i{
+                        margin-right: 5px;
+                    }
+                    font-size: 12px;
+                    margin-right: 22px;
+                    margin-bottom: 20px;
+                }
+            }
+            .list_bot{
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid #dfdfdf;
+                p{
+                    i{
+                        margin-right: 5px;
+                    }
+                    margin: 18px;
+                }
+            }
+        }
+    }
+}

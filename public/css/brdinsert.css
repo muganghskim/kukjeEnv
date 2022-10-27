@@ -1,0 +1,94 @@
+.contact_us {
+  display: flex;
+  justify-content: center;
+}
+.contact_us .center {
+  width: 1100px;
+}
+.contact_us .center h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.contact_us .center > p {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.contact_us .center .admininfo {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.contact_us .center .admininfo h5 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.contact_us .center .admininfo p {
+  margin-bottom: 50px;
+}
+.contact_us .center .brdInsert {
+  width: 730px;
+  margin: 0 auto;
+}
+.contact_us .center .brdInsert .line {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_us .center .brdInsert .line p {
+  width: 350px;
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  line-height: 40px;
+  background-color: #f8f8f8;
+  border: 1px solid #dfdfdf;
+}
+.contact_us .center .brdInsert .line input {
+  width: 350px;
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #dfdfdf;
+}
+.contact_us .center .brdInsert textarea {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  height: 240px;
+  border: 1px solid #dfdfdf;
+}
+.contact_us .center .brdInsert .addfileWrap {
+  display: flex;
+  align-items: center;
+}
+.contact_us .center .brdInsert .addfileWrap label {
+  display: block;
+  font-size: 13px;
+  width: 60px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  background-color: #999;
+  color: #fff;
+}
+.contact_us .center .brdInsert .addfileWrap span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.contact_us .center .brdInsert .addfileWrap #addfile {
+  display: none;
+}
+.contact_us .center .brdInsert button {
+  display: block;
+  width: 162px;
+  height: 42px;
+  background-color: brown;
+  margin: 20px auto 60px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
