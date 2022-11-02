@@ -162,6 +162,14 @@ const upload = multer({ storage: storage })
 app.post("/addbrd",upload.single('addfile'),function(req,res){
     //db에 접근해서 게시글 입력처리
     //moment 사용해서 현재시간 입력
+    //조건문으로 파일첨부시 첨부 파일명 / 없으면 null값을 넣어준다.
+    if(req.file){
+        fileUpload = req.file.originalname;
+    }
+    else{
+        fileUpload = null;
+    }
+
     let time = moment().format("YYYY.MM.DD");
     db.collection("portfolio1_count").findOne({name:"게시판"},function(err,result){
         db.collection("portfolio1_board").insertOne({
@@ -170,7 +178,7 @@ app.post("/addbrd",upload.single('addfile'),function(req,res){
             brdcontext:req.body.context,
             brdauther:req.user.joinnick,
             brdtime:time,
-            brdfile:req.file.originalname
+            brdfile:fileUpload
         },function(err,result){
             db.collection("portfolio1_count").updateOne({name:"게시판"},{$inc:{totalBoard:1}},function(err,result){
                 res.redirect("/brdlist");
@@ -190,11 +198,19 @@ app.get("/brdupt/:no",function(req,res){
 //수정후 업데이트
 app.post("/update",upload.single('uptfile'),function(req,res){
     //db에 수정된 데이터 업데이트
+    //첨부파일을 했다면 해당 파일의 파일명
+    if(req.file){
+        fileUpload = req.file.originalname;
+    }
+    else{
+        fileUpload = req.body.originfile;
+    }
+
     db.collection("portfolio1_board").updateOne({brdid:Number(req.body.id)},{
         $set:{
             brdsubject:req.body.subject,
             brdcontext:req.body.context,
-            brdfile:req.file.originalname     
+            brdfile:fileUpload     
         }
     },function(err,result){
         res.redirect("/brddetail/" + req.body.id);

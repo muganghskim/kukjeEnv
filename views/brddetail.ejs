@@ -7,7 +7,11 @@
 </div>
 <div class="detail_center">
     <div class="detailWrap">
-        <div class="imgWrap"><img src="/upload/<%- brdData.brdfile %>"></div>
+        <div class="imgWrap">
+            <% if(brdData.brdfile) { %>
+            <img src="/upload/<%- brdData.brdfile %>">
+            <% } %>
+        </div>
         <h3><%- brdData.brdsubject %></h3>
         <ul class="detail_info">
             <li><i class="fa-solid fa-person"></i><%- brdData.brdauther %></li>

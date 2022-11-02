@@ -9,7 +9,11 @@
     <% for(let i=0; i < brdData.length; i++){ %>
         <div class="grid_list">
             <div class="list_img">
+                <% if(brdData[i].brdfile) { %>
                 <img src="/upload/<%- brdData[i].brdfile %>">
+                <% } else {%>
+                <div class="noimg">썸네일 없음</div>
+                <% }%>
                 <ul class="img_top">
                     <li class="featured">FEATURED</li>
                     <li class="for-sale">FOR SALE</li>
