@@ -43,11 +43,29 @@ body{line-height: 1;}
             }
             .gnb{
                 display: flex;
-                li{
+                > li{
                     line-height: 90px;
                     margin: 0 15px;
+                    position: relative;
                     a{
                         color: #555;
+                    }
+                    .depth{
+                        position: absolute;
+                        left: -20px;
+                        top: 88px;
+                        height: 0;
+                        background-color: #fff;
+                        transition: all 0.5s;
+                        z-index: 99;
+                        overflow: hidden;
+                        border-radius: 0 0 10px 10px;
+                        li{
+                            text-indent: 20px;
+                            line-height: 40px;
+                            width: 120px;
+                        }
+
                     }
                 }
             }
@@ -86,11 +104,25 @@ body{line-height: 1;}
         }
         .hbgGnb{
             margin: 120px 0 300px 80px;
-            li{
+            > li{
                 margin-bottom: 30px;
                 font-size: 30px;
                 a{
                     color: #fff;
+                }
+            }
+            .depthWrap2{
+                .depth2{
+                    margin-top: 10px;
+                    height: 0px;
+                    transition: all 0.5s;
+                    overflow: hidden;
+                    li{
+                        line-height: 30px;
+                        font-size: 20px;
+                        text-indent: 10px;
+                        width: 100px;
+                    }
                 }
             }
             li:hover{
@@ -122,7 +154,6 @@ body{line-height: 1;}
 }
 
 #header.fixed{
-    
     .h-bot{
         position: fixed;
         width: 100%;
@@ -135,6 +166,13 @@ body{line-height: 1;}
                 > li{
                     a{
                         color: #fff;
+                    }
+                    .depth{
+                        background-color: #930E0A;
+                        li{
+                          z-index: 99;
+                        }
+
                     }
                 }
             }

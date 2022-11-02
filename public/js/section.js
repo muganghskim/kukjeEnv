@@ -1,12 +1,33 @@
 const header = document.querySelector("#header");
 const logo = document.querySelector(".logoImg");
 const move = document.querySelectorAll(".move");
-const gnb = document.querySelectorAll(".gnb > .liMove");
-const hbgGnb = document.querySelectorAll(".hbgGnb > .liMove");
+const gnb = document.querySelectorAll(".gnb .liMove");
+const hbgGnb = document.querySelectorAll(".hbgGnb .liMove");
 const hbgMenu = document.querySelector(".hbgMenu");
-const index = document.querySelector(".index");
+const depthWrap2 = document.querySelector(".depthWrap2");
+const depthWrap = document.querySelector(".depthWrap");
+const depth2 = document.querySelector(".depth2"); 
+const depth = document.querySelector(".depth"); 
+
+//드롭 다운 메뉴 등장
+depthWrap.addEventListener("mouseenter",function(){
+    depth.style.height = "90px";
+});
+depthWrap.addEventListener("mouseleave",function(){
+    depth.style.height = "0px";
+});
+
+//hbg드롭 다운 메뉴 등장
+depthWrap2.addEventListener("mouseenter",function(){
+    depth2.style.height = "60px";
+});
+depthWrap2.addEventListener("mouseleave",function(){
+    depth2.style.height = "0px";
+});
+
 let secStart = [];
 index.style.color = "brown";
+
 window.addEventListener("scroll",function(){
     let cont2Start = document.querySelector(".h-bot").offsetTop;
     
@@ -47,7 +68,7 @@ function scrollTocont(tag){
         tag[i].addEventListener("click",function(e){
         e.preventDefault();
         //해당 섹션구역의 위치값으로 스크롤바가 부드럽게 이동
-        let scrollMove = move[i].offsetTop;
+        let scrollMove = move[i].offsetTop-90;
         window.scrollTo({
             top:scrollMove,
             behavior:"smooth"
@@ -70,3 +91,4 @@ xBtn.addEventListener("click",function(){
 operX.addEventListener("click",function(){
     hbgMenu.classList.remove("on");
 });
+

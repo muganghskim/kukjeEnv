@@ -65,12 +65,29 @@ body {
 #header .h-bot .center .gnb {
   display: flex;
 }
-#header .h-bot .center .gnb li {
+#header .h-bot .center .gnb > li {
   line-height: 90px;
   margin: 0 15px;
+  position: relative;
 }
-#header .h-bot .center .gnb li a {
+#header .h-bot .center .gnb > li a {
   color: #555;
+}
+#header .h-bot .center .gnb > li .depth {
+  position: absolute;
+  left: -20px;
+  top: 88px;
+  height: 0;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 99;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+}
+#header .h-bot .center .gnb > li .depth li {
+  text-indent: 20px;
+  line-height: 40px;
+  width: 120px;
 }
 #header .h-bot .center .joinWrap {
   display: none;
@@ -108,12 +125,24 @@ body {
 .hbgMenu .nav .hbgGnb {
   margin: 120px 0 300px 80px;
 }
-.hbgMenu .nav .hbgGnb li {
+.hbgMenu .nav .hbgGnb > li {
   margin-bottom: 30px;
   font-size: 30px;
 }
-.hbgMenu .nav .hbgGnb li a {
+.hbgMenu .nav .hbgGnb > li a {
   color: #fff;
+}
+.hbgMenu .nav .hbgGnb .depthWrap2 .depth2 {
+  margin-top: 10px;
+  height: 0px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.hbgMenu .nav .hbgGnb .depthWrap2 .depth2 li {
+  line-height: 30px;
+  font-size: 20px;
+  text-indent: 10px;
+  width: 100px;
 }
 .hbgMenu .nav .hbgGnb li:hover {
   list-style: circle;
@@ -154,6 +183,12 @@ body {
 }
 #header.fixed .h-bot .center .gnb > li a {
   color: #fff;
+}
+#header.fixed .h-bot .center .gnb > li .depth {
+  background-color: #930E0A;
+}
+#header.fixed .h-bot .center .gnb > li .depth li {
+  z-index: 99;
 }
 #header.fixed .h-bot .center .joinWrap {
   display: flex;
