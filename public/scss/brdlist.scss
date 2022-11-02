@@ -9,7 +9,6 @@
         margin: 10px 10px;
         .list_img{
             position: relative;
-            
             img{
                 width: 100%;
                 height: 235px;
@@ -53,7 +52,9 @@
             }
         }
         .list_info{
-            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             h3{
                 font-size: 20px;
                 a{
@@ -91,6 +92,48 @@
                         margin-right: 5px;
                     }
                     margin: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .gridWrap{
+        width: 77.5%;
+        .grid_list{
+            width: 30%;
+            .list_img{
+                img{
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .gridWrap{
+        width: 69.2%;
+        .grid_list{
+            width: 45.69%;
+            .list_img{
+                img{
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .gridWrap{
+        width: 89%;
+        .grid_list{
+            width: 100%;
+            .list_img{
+                img{
+                    height: 330px;
                 }
             }
         }

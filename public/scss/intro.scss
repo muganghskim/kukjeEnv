@@ -119,17 +119,17 @@
                     }
                 }
             }
-            > a{
-                display: block;
-                width: 150px;
-                height: 42px;
-                border-radius: 21px;
-                line-height: 42px;
-                text-align: center;
-                color: brown;
-                box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-                margin: 60px auto 100px;
-            }
+        }
+        > a{
+            display: block;
+            width: 150px;
+            height: 42px;
+            border-radius: 21px;
+            line-height: 42px;
+            text-align: center;
+            color: brown;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin: 60px auto 100px;
         }
     }
 }
@@ -269,6 +269,149 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .intro_housing{
+        .center{
+            width: 77.5%;
+        }
+    }  
+    .intro_choose{
+        .center{
+            width: 77.5%;
+            .choose_listWrap{
+                .choose_list{
+                    width: 31%;
+                }
+            }
+        }
+    }
+    .intro_agent{
+        .center{
+            width: 77.5%;
+            .agent_listWrap{
+                .agent_list{
+                    width: 31%;
+                    .agent_imgWrap{
+                        img{
+                            width: 100%;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .intro_housing{
+        .center{
+            width: 69.2%;
+            flex-direction: column;
+            video{
+                width: 100%;
+                margin-top: 60px;
+            }
+            .right_welcome{
+                margin-left: unset;
+                h3{
+                    margin-top: 50px;
+                }
+                a{
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }  
+    .intro_choose{
+        .center{
+            width: 69.2%;
+            .choose_listWrap{
+                justify-content: space-around;
+                .choose_list{
+                    width: 47%;
+                    &:nth-child(7),&:nth-child(8),&:nth-child(9){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .intro_agent{
+        .center{
+            width: 69.2%;
+            .agent_listWrap{
+                .agent_list{
+                    width: 48%;
+                    &:last-child{
+                        display: none;
+                    }
+                    .agent_imgWrap{
+                        img{
+                            height: 270px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .intro_housing{
+        .center{
+            width: 67%;
+            
+        }
+    }  
+    .intro_choose{
+        .center{
+            width: 67%;
+            .choose_listWrap{
+                .choose_list{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .intro_agent{
+        .center{
+            width: 67%;
+            .agent_listWrap{
+                .agent_list{
+                    width: 100%;
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    .agent_imgWrap{
+                        img{
+                            height: 420px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px){
+    .intro_housing{
+        .center{
+            width: 94%;
+        }
+    }  
+    .intro_choose{
+        .center{
+            width: 94%;
+        }
+    }
+    .intro_agent{
+        .center{
+            width: 94%;
         }
     }
 }

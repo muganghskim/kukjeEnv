@@ -53,6 +53,11 @@
 .gridWrap .grid_list .list_img .price span {
   font-weight: normal;
 }
+.gridWrap .grid_list .list_info {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .gridWrap .grid_list .list_info h3 {
   font-size: 20px;
   margin: 0px 0 22px 20px;
@@ -91,4 +96,38 @@
 }
 .gridWrap .grid_list .list_info .list_bot p i {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .gridWrap {
+    width: 77.5%;
+  }
+  .gridWrap .grid_list {
+    width: 30%;
+  }
+  .gridWrap .grid_list .list_img img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .gridWrap {
+    width: 69.2%;
+  }
+  .gridWrap .grid_list {
+    width: 45.69%;
+  }
+  .gridWrap .grid_list .list_img img {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gridWrap {
+    width: 89%;
+  }
+  .gridWrap .grid_list {
+    width: 100%;
+  }
+  .gridWrap .grid_list .list_img img {
+    height: 330px;
+  }
 }

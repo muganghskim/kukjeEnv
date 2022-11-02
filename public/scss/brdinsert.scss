@@ -92,3 +92,85 @@
         }
     }
 }
+
+@media screen and (max-width:1200px){
+    .contact_us{
+        .center{
+            width: 77.5%;
+            .brdInsert{
+                width: 65%;
+                .line{
+                    p{
+                        width: 47%;
+                    }
+                    input{
+                        width: 47%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contact_us{
+        .center{
+            width: 69.2%;
+            .admininfo{
+                justify-content: space-between;
+                p{
+                    font-size: 13px;
+                }
+            }
+            .brdInsert{
+                width: 100%;
+                .line{
+                    p{
+                        width: 47%;
+                    }
+                    input{
+                        width: 47%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .contact_us{
+        .center{
+            width: 67%;
+            .admininfo{
+                flex-wrap: wrap;
+                .info_list{
+                    width: 50%;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            .brdInsert{
+                width: 100%;
+                .line{
+                    flex-direction: column;
+                    p{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px){
+    .contact_us{
+        .center{
+            width: 94%;
+        }
+    }
+}

@@ -65,8 +65,8 @@
             <!-- 댓글 입력시 해당 게시글의 번호값도 같이 전송 
                 댓글은 어떤 게시글 안에 소속될 것인지 표시하기 위해서 -->
             <input type="hidden" name="prdid" value="<%- brdData.brdid %>">
-            <textarea name="comment_text"></textarea>
-            <button type="submit">댓글등록</button>
+            <textarea id="context" name="comment_text"></textarea>
+            <button id="submitBtn" type="submit">댓글등록</button>
         </form>
     </div>
     <% } %>
@@ -92,6 +92,7 @@
     //textarea 태그들 선택
     const comContext = document.querySelectorAll(".comContext");
     const del_comment = document.querySelectorAll(".del_comment");
+    
     //작성취소를 누르면 원래 댓글 내용으로 리셋
     console.log(del_comment);
     let originText = [];
@@ -115,6 +116,25 @@
             }
         });
     }
+    const submitBtn = document.querySelector("#submitBtn");
+    const contextResult = document.querySelector("#context");
+    const submitForm = document.querySelector("#comment_form");
+
+    submitBtn.addEventListener("click",function(e){
+        
+        //문자열의 띄어쓰기 공백들을 제거해주는 문자열처리 함수 trim()
+
+        let submitValue = contextResult.value;
+        submitValue = submitValue.trim();
+
+        if(submitValue === ""){
+            e.preventDefault();
+            alert("내용을 입력해주세요");
+        } 
+        else{
+            submitForm.submit();
+        }
+    });
 </script>
 </body>
 </html>

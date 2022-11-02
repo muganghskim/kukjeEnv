@@ -47,8 +47,8 @@
     </div>
     <div class="cont2">
         <div class="center">
-            <h2></h2>
-            <p></p>
+            <h2>WHAT ARE YOU LOOKING FOR?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="cont2Wrap">
                 <div class="imgWrap"><img src="/img/cont2.jpg"></div>
                 <div class="choose_listWrap">
@@ -67,34 +67,213 @@
             </div>
         </div>
     </div>
+    <div class="cont3">
+        <div class="center">
+            <h2>RECENTLY PROPERTIES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <div class="cont3_propertiesWrap">
+                <div class="view">
+                <% for(let i=0; i < brdData.length; i++){ %>
+                    <div class="properties">
+                        <div class="pp_img">
+                            <img src="/upload/<%- brdData[i].brdfile %>">
+                            <p class="pp_top">FOR RENT</p>
+                        </div>
+                        <div class="pp_info">
+                            <h3><a href="/brddetail/<%- brdData[i].brdid %>"><%- brdData[i].brdsubject %></a></h3>
+                            <p><i class="fa-solid fa-location-dot"></i>123 kathal St. Tampa City</p>
+                            <ul class="room_info">
+                                <li>480 sqft</li>
+                                <li>3 Beds</li>
+                                <li>2 Baths</li>
+                            </ul>
+                        </div>
+                    </div>
+                <% } %>
+                </div>
+            </div>
+            <ul class="ppBtns">
+                <% for(let i=0; i < Math.ceil(brdData.length/4); i++){ %>
+                    <li class="ppBtn"></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="cont4">
+        <div class="center">
+            <div class="achieves">
+                <div class="box box1">
+                    <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <div>
+                        <p class="count">0</p>
+                        <p class="achieve">Customers</p>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="icon"><i class="fa-regular fa-note-sticky"></i></div>
+                    <div>
+                    <p class="count">0</p>
+                    <p class="achieve">Pages</p>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div>
+                    <p class="count">0</p>
+                    <p class="achieve">Accolades</p>
+                    </div>
+                </div>
+                <div class="box box4">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <p class="count">0</p>
+                        <p class="achieve">Code</p>
+                    </div>
+                </div>
+                <div class="box box5">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <p class="count">0</p>
+                        <p class="achieve">Coffee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont5">
+        <div class="center">
+            <h2>MOST POPULAR PLACES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <ul class="boxBtn">
+                <li class="on" data-btn="*"><a href="#">All</a></li>
+                <li data-btn=".asia"><a href="#">Asia</a></li>
+                <li data-btn=".eu"><a href="#">EU</a></li>
+                <li data-btn=".america"><a href="#">America</a></li>
+            </ul>
+            <div class="girdWrap">
+                <div class="grid">
+                    <div class="all asia small"></div>
+                    <div class="all america small"></div>
+                    <div class="all eu small"></div>
+                    <div class="all asia big"></div>
+                    <div class="all eu small"></div>
+                    <div class="all asia small"></div>
+                    <div class="all america big"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cont6 move">
+        <div class="center">
+            <h2>OUR AGENT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <div class="agWrap">
+                <% for(let i=0; i < 4; i++){ %>
+                    <div class="agList">
+                        <div class="ag_imgWrap"><img src="/img/ag_<%- i + 1 %>.jpg"></div>
+                        <h3>Mria Blank</h3>
+                        <p>Office Manager</p>
+                        <ul class="ag_icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <div class="cont7">
+        <div class="center">
+            <h2>OUR TESTIONIAL</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <div class="maintestiWrap">
+                <% for(let i=0; i < 3; i++){ %>
+                    <div class="testiList">
+                        <div class="testi_imgWrap"><img src="/img/person<%- i+1%>.png"></div>
+                        <h3>Karen Paran</h3>
+                        <ul class="star_icon">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                            <li>(4.5 Reviews)</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <div class="cont8 move">
+        <div class="center">
+            <h2>OUR BLOG</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <div class="blogWrap">
+                <% for(let i=0; i < 3; i++){ %>
+                    <div class="blogList">
+                        <div class="blog_imgWrap">
+                            <img src="/upload/home<%- i+1%>.jpg">
+                            <div class="blog_iconWrap"><img src="/img/person<%- i+1%>.png"></div>
+                            <div class="blog_day"><p>17<br><span>jan</span></p></div>
+                        </div>
+                        <ul class="blog_icon">
+                            <li>Alex Teseura</li>
+                            <li><i class="fa-regular fa-calendar-days"></i></li>
+                            <li><i class="fa-solid fa-comments"></i></li>
+                        </ul>
+                        <h3>Selling Your Real House</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <div id="cont9">
+        <div class="center">
+            <h4>BRANDS AND PARTNERS</h4>
+            <div class="brandWrap swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide s1">
+                        <% for(let i=0; i < 5; i++){ %>
+                            <img src="/img/nobrand.png">
+                        <% } %>
+                    </div>
+                    <div class="swiper-slide s2">
+                        <% for(let i=0; i < 5; i++){ %>
+                            <img src="/img/nobrand.png">
+                        <% } %>
+                    </div>
+                    <div class="swiper-slide s3">
+                        <% for(let i=0; i < 5; i++){ %>
+                            <img src="/img/nobrand.png">
+                        <% } %>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="prevBtn naviBtn"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="nextBtn naviBtn"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
 </div>
 <%- include("common/footer") %>
+<!-- 구역이동 및 햄버거 메뉴 -->
+<script src="/js/section.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.slideWrap', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        effect:"fade",
-        
-        //자동재생구간
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-
-        // If we need pagination
-        pagination: {
-            el: '.circleBtn',
-            clickable:true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.nextBtn',
-            prevEl: '.prevBtn',
-        },
-    });
-</script>
+<script src="/js/slide1.js"></script>
+<script src="/js/slide2.js"></script>
+<script src="/js/slide3.js"></script>
+<!-- cont5 카운트업 스크립트 -->
+<script src="/js/countUp.js"></script>
+<!-- isotpe init -->
+<script src="/js/isotope.pkgd.min.js"></script>
+<!-- isotope 실행코드 -->
+<script src="/js/isoTest.js"></script>
 </body>
 </html>

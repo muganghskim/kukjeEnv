@@ -71,3 +71,139 @@ body {
 #header .h-bot .center .gnb li a {
   color: #555;
 }
+
+.hbgMenu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 99;
+}
+.hbgMenu .operci {
+  width: 65%;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.hbgMenu .nav {
+  width: 35%;
+  background-color: #930E0A;
+  color: #fff;
+}
+.hbgMenu .nav .xBtn {
+  text-align: right;
+  font-size: 35px;
+  line-height: 50px;
+  margin-right: 15px;
+}
+.hbgMenu .nav .xBtn span {
+  cursor: pointer;
+}
+.hbgMenu .nav .hbgGnb {
+  margin: 120px 0 300px 80px;
+}
+.hbgMenu .nav .hbgGnb li {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.hbgMenu .nav .hbgGnb li a {
+  color: #fff;
+}
+.hbgMenu .nav .hbgGnb li:hover {
+  list-style: circle;
+}
+.hbgMenu .nav .hbgGnb li.on {
+  list-style: circle;
+}
+.hbgMenu .nav .hbgFoot {
+  margin-left: 80px;
+}
+.hbgMenu .nav .hbgFoot .hbgIcon {
+  display: flex;
+  margin-bottom: 30px;
+}
+.hbgMenu .nav .hbgFoot .hbgIcon a {
+  color: #fff;
+}
+.hbgMenu .nav .hbgFoot .hbgIcon a i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.hbgMenu .nav .hbgFoot .hbgCopy {
+  font-size: 17px;
+  line-height: 25px;
+  margin-right: 50px;
+}
+
+.hbgMenu.on {
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #header .h-top .center {
+    width: 77.5%;
+  }
+  #header .h-bot .center {
+    width: 77.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #header .h-top .center {
+    width: 69.2%;
+  }
+  #header .h-bot .center {
+    width: 69.2%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .h-bot .center .logo {
+    margin: unset;
+    margin: 5px 0;
+  }
+  #header .h-bot .center .gnb {
+    display: none;
+  }
+  #header .h-bot .center .hbgBtn {
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  #header .h-bot .center .hbgBtn span {
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #535353;
+  }
+  #header .h-bot .center .hbgBtn .top {
+    margin-bottom: 5px;
+  }
+  #header .h-bot .center .hbgBtn .mid {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #header .h-top .center {
+    width: 66.6%;
+  }
+  #header .h-bot .center {
+    width: 66.6%;
+  }
+  .hbgMenu .nav .hbgFoot .hbgCopy {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  #header .h-top .center {
+    width: 94%;
+  }
+  #header .h-bot .center {
+    width: 94%;
+  }
+  .hbgMenu .nav .hbgGnb {
+    margin: 120px 0 300px 40px;
+  }
+  .hbgMenu .nav .hbgFoot {
+    margin-left: 40px;
+  }
+}

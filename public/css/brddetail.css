@@ -137,3 +137,29 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+  .detail_center {
+    width: 77.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .detail_center {
+    width: 69.2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .detail_center {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .detail_center {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .detail_center {
+    width: 94%;
+  }
+}

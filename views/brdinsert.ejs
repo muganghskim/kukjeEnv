@@ -45,19 +45,43 @@
                 <input type="text" name="email" placeholder="Email">
             </div>
             <div class="line">
-                <input type="text" name="subject" placeholder="Subject">
+                <input class="subject" type="text" name="subject" placeholder="Subject">
                 <input type="text" name="number" placeholder="Number">
             </div>
-            <textarea name="context" placeholder="Write message"></textarea>
+            <textarea id="context" name="context" placeholder="Write message"></textarea>
             <div class="addfileWrap">
                 <label for="addfile">파일첨부</label>
                 <input id="addfile" type="file" name="addfile">
                 <span>주택 이미지를 첨부해 주세요.</span>
             </div>
-            <button type="submit">SEND MESSAGE</button>
+            <button id="submitBtn" type="submit">SEND MESSAGE</button>
         </form>
     </div>
 </div>
 <%- include("common/footer") %>
+<script>
+    const submitBtn = document.querySelector("#submitBtn");
+    const titleResult = document.querySelector(".subject");
+    const contextResult = document.querySelector("#context");
+    const submitForm = document.querySelector(".brdInsert");
+
+    submitBtn.addEventListener("click",function(e){
+        
+        //문자열의 띄어쓰기 공백들을 제거해주는 문자열처리 함수 trim()
+
+        let submitValue = titleResult.value;
+        let submitValue2 = contextResult.value;
+        submitValue = submitValue.trim();
+        submitValue2 = submitValue2.trim();
+
+        if(submitValue === "" || submitValue2 === ""){
+            e.preventDefault();
+            alert("제목과 내용을 입력해주세요");
+        } 
+        else{
+            submitForm.submit();
+        }
+    });
+</script>
 </body>
 </html>

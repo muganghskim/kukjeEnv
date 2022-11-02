@@ -16,18 +16,23 @@
                     <a href="/login">LOGIN</a>
                     <a class="on" href="/join">REGISTER</a>
                 </div>
-                <form action="/addjoin" method="post">
+                <form id="join_form" action="/addjoin" method="post">
                     <input id="username" type="text" name="username" placeholder="Name">
+                    <p class="message"></p>
                     <input id="userid" type="text" name="userid" placeholder="ID">
+                    <p class="message"></p>
                     <input id="userpass" type="password" name="userpass" placeholder="Password">
-                    <button type="submit">REGISTER</button>
+                    <p class="message"></p>
+                    <button id="submitBtn" type="submit">REGISTER</button>
                 </form>
                 <p class="path_login">Already a member? <a href="/login">Login here</a></p>
+                <a class="path_home" href="/">HOME</a>
             </div>
             <div class="left_imgWrap">
                 <img src="/img/login.jpg">
             </div>
         </div>
     </div>
+    <script src="/js/validation.js"></script>
 </body>
 </html>

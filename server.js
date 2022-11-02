@@ -34,7 +34,9 @@ MongoClient.connect("mongodb+srv://admin:qwer1234@testdb.ssk6ku3.mongodb.net/?re
 
 //메인페이지 get 요청
 app.get("/",function(req,res){
-    res.render("index",{userData:req.user}); //로그인시 회원정보데이터 ejs 파일로 전달
+    db.collection("portfolio1_board").find().sort({brdid:-1}).toArray(function(err,result){
+        res.render("index",{brdData:result,userData:req.user})
+    }); //로그인시 회원정보데이터 ejs 파일로 전달
 });
 
 //회사소개 페이지 get 요청
@@ -88,6 +90,11 @@ app.get("/logout",function(req,res){
 app.post("/addlogin",passport.authenticate('local', {failureRedirect : '/fail'}),function(req,res){
     //실패시 /fail 경로로 요청
     res.redirect("/"); //로그인 성공시 메인페이지로 이동
+});
+
+// 로그인 실패시 경고창 및 재시도
+app.get("/fail",function(req,res){
+    res.send("<script>alert('로그인 실패하였습니다. 다시 로그인 해주세요.'); location.href='/login'; </script>");
 });
 
 

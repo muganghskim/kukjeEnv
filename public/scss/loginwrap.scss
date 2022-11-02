@@ -52,6 +52,17 @@ body{line-height: 1;}
                     border-radius: 0 15px 15px 0;
                 }
             }
+            #join_form{
+                input{
+                    margin-bottom: unset;
+                }
+                .message{
+                    height: 23px;
+                    line-height: 23px;
+                    margin-left: 50px;
+                    font-size: 12px;
+                }
+            }
             form{
                 input{
                     width: 375px;
@@ -79,17 +90,26 @@ body{line-height: 1;}
             }
             .path_regi{
                 text-align: center;
-                padding-bottom: 100px;
+             
                 a{
                     color: #999;
                 }
             }
             .path_login{
                 text-align: center;
-                padding-bottom: 60px;
+               
                 a{
                     color: #999;
                 }
+            }
+            .path_home{
+                display: block;
+                width: 20px;
+                font-size: 12px;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                color: #999;
+                margin: 0 auto;
             }
         }
         .left_imgWrap{
@@ -101,4 +121,22 @@ body{line-height: 1;}
             }
         }
     }
+}
+
+@media screen and (max-width:1000px){
+    .loginWrap{
+        .center{
+            width: 500px;
+            .formWrap{
+                width: 100%;
+                border-radius: 25px;
+            }
+            .left_imgWrap{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    
 }
