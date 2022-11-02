@@ -36,9 +36,9 @@
         </div>
         <div class="h-bot">
             <div class="center">
-                <h1 class="logo"><a href="/"><img src="/img/logo.png"></a></h1>
+                <h1 class="logo"><a href="/"><img class="logoImg" src="/img/logo.png"></a></h1>
                 <ul class="gnb">
-                    <li><a class="index" href="/">Index</a></li>
+                    <li><a id="index" class="index" href="/">Index</a></li>
                     <li><a class="brdlist" href="/brdlist">Properties</a></li>
                     <li class="liMove"><a href="#">Agents</a></li>
                     <li><a class="intro" href="/intro">Pages</a></li>
@@ -48,6 +48,15 @@
                     <span class="top"></span>
                     <span class="mid"></span>
                     <span class="bot"></span>
+                </div>
+                <div class="joinWrap">
+                    <% if(!userData){ %>
+                        <a href="/login"><i class="fa-solid fa-arrow-right"></i>Login</a>
+                        <a href="/join"><i class="fa-solid fa-user"></i>Register</a>
+                    <% } else { %>
+                        <a class="username"><%- userData.joinnick %>님</a>
+                        <a class="logout" href="/logout">Logout</a>
+                    <% } %>
                 </div>
             </div>
         </div>

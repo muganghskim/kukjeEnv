@@ -1,30 +1,15 @@
-const header = document.querySelector("#header");
-const logo = document.querySelector(".logoImg");
+
 const move = document.querySelectorAll(".move");
 const gnb = document.querySelectorAll(".gnb > .liMove");
 const hbgGnb = document.querySelectorAll(".hbgGnb > .liMove");
 const hbgMenu = document.querySelector(".hbgMenu");
-const index = document.querySelector(".index");
 let secStart = [];
-index.style.color = "brown";
 window.addEventListener("scroll",function(){
-    let cont2Start = document.querySelector(".h-bot").offsetTop;
     
     for(let i=0; i<move.length; i++){
         secStart[i] = move[i].offsetTop;
     }
     let scTop = window.scrollY;
-
-    if(scTop >= (cont2Start)){
-        header.classList.add("fixed");
-        logo.setAttribute("src","/img/logo_w.png");
-        index.style.color = "#fff";
-    }
-    else{
-        header.classList.remove("fixed");
-        logo.setAttribute("src","/img/logo.png");
-        index.style.color = "brown";
-    }
 
     for(let i=0; i<gnb.length; i++){
         if(scTop >= secStart[i]){

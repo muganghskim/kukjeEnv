@@ -48,6 +48,7 @@ body {
 #header .h-bot {
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
 #header .h-bot .center {
   display: flex;
@@ -70,6 +71,9 @@ body {
 }
 #header .h-bot .center .gnb li a {
   color: #555;
+}
+#header .h-bot .center .joinWrap {
+  display: none;
 }
 
 .hbgMenu {
@@ -114,9 +118,6 @@ body {
 .hbgMenu .nav .hbgGnb li:hover {
   list-style: circle;
 }
-.hbgMenu .nav .hbgGnb li.on {
-  list-style: circle;
-}
 .hbgMenu .nav .hbgFoot {
   margin-left: 80px;
 }
@@ -139,6 +140,31 @@ body {
 
 .hbgMenu.on {
   right: 0;
+}
+
+#header.fixed .h-bot {
+  position: fixed;
+  width: 100%;
+  transform: translateY(-45%);
+  background-color: #930E0A;
+  z-index: 90;
+}
+#header.fixed .h-bot .center {
+  justify-content: space-between;
+}
+#header.fixed .h-bot .center .gnb > li a {
+  color: #fff;
+}
+#header.fixed .h-bot .center .joinWrap {
+  display: flex;
+}
+#header.fixed .h-bot .center .joinWrap a {
+  line-height: 40px;
+  color: #fff;
+  margin-left: 5px;
+}
+#header.fixed .h-bot .center .joinWrap a i {
+  margin: 0 5px 0 10px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -180,6 +206,15 @@ body {
   }
   #header .h-bot .center .hbgBtn .mid {
     margin-bottom: 5px;
+  }
+  #header.fixed .h-bot {
+    transform: translateY(-50%);
+  }
+  #header.fixed .h-bot .center .joinWrap {
+    display: none;
+  }
+  #header.fixed .h-bot .center .hbgBtn span {
+    background-color: #fff;
   }
 }
 @media screen and (max-width: 768px) {

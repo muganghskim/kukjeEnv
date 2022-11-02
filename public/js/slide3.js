@@ -17,5 +17,3 @@ let slider = document.querySelector(".view");
             slider.style.marginLeft = -100 * sNumber + "%";
         });
     }
-    let index = document.querySelector(".index");
-    index.style.color = "brown";
