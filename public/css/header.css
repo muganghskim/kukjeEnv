@@ -27,6 +27,13 @@ textarea {
 body {
   line-height: 1;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: brown;
+  border-radius: 5px;
+}
 
 #header .h-top {
   background-color: #930E0A;

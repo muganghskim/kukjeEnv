@@ -76,8 +76,12 @@
                 <% for(let i=0; i < brdData.length; i++){ %>
                     <div class="properties">
                         <div class="pp_img">
+                            <% if(brdData[i].brdfile) { %>
                             <img src="/upload/<%- brdData[i].brdfile %>">
                             <p class="pp_top">FOR RENT</p>
+                            <% } else {%>
+                                <div class="noimg">썸네일 없음</div>
+                            <% } %>
                         </div>
                         <div class="pp_info">
                             <h3><a href="/brddetail/<%- brdData[i].brdid %>"><%- brdData[i].brdsubject %></a></h3>

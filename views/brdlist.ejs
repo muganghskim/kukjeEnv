@@ -11,14 +11,14 @@
             <div class="list_img">
                 <% if(brdData[i].brdfile) { %>
                 <img src="/upload/<%- brdData[i].brdfile %>">
-                <% } else {%>
-                <div class="noimg">썸네일 없음</div>
-                <% }%>
                 <ul class="img_top">
                     <li class="featured">FEATURED</li>
                     <li class="for-sale">FOR SALE</li>
                 </ul>
                 <p class="price">$32,000<span>/mo</span></p>
+                <% } else {%>
+                    <div class="noimg">썸네일 없음</div>
+                <% }%>
             </div>
             <div class="list_info">
                 <h3><a href="/brddetail/<%- brdData[i].brdid %>"><%- brdData[i].brdsubject %></a></h3>

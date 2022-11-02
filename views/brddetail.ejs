@@ -109,6 +109,26 @@
             comuptForm[i].style.display = "flex";
             uptCom[i].style.display = "none";
             originText[i] = comContext[i].value;
+
+
+            let uptBtns = document.querySelectorAll(".comment_ok");
+            //수정버튼 클릭 후
+            uptBtns[i].addEventListener("click",function(e){
+        
+                //문자열의 띄어쓰기 공백들을 제거해주는 문자열처리 함수 trim()
+
+                let submitValue = comContext[i].value;
+                submitValue = submitValue.trim();
+
+                if(submitValue === ""){
+                    e.preventDefault();
+                    alert("내용을 입력해주세요");
+                } 
+                else{
+                    comuptForm[i].submit();
+                }
+            });
+
         });
         comCancel[i].addEventListener("click",function(){
             comuptForm[i].style.display = "none";

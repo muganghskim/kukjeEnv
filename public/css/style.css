@@ -167,6 +167,15 @@
   width: 100%;
   height: 170px;
 }
+.cont3 .center .cont3_propertiesWrap .view .properties .pp_img .noimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  width: 100%;
+  height: 170px;
+}
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info h3 {
   font-size: 20px;
   margin: 25px 0 15px 20px;
@@ -181,13 +190,13 @@
 }
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info {
   display: flex;
-  border-top: 1px solid #777;
+  border-top: 1px solid #dfdfdf;
 }
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info li {
   width: 33.3%;
   text-align: center;
   padding: 10px;
-  border-left: 1px solid #777;
+  border-left: 1px solid #dfdfdf;
 }
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info li:first-child {
   border: none;
@@ -598,6 +607,9 @@
   .cont3 .center .cont3_propertiesWrap .view .properties .pp_img img {
     height: 140px;
   }
+  .cont3 .center .cont3_propertiesWrap .view .properties .pp_img .noimg {
+    height: 140px;
+  }
   .cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info li {
     white-space: nowrap;
     overflow: hidden;
@@ -659,6 +671,9 @@
     width: 20%;
   }
   .cont3 .center .cont3_propertiesWrap .view .properties .pp_img img {
+    height: 210px;
+  }
+  .cont3 .center .cont3_propertiesWrap .view .properties .pp_img .noimg {
     height: 210px;
   }
   .cont4 .center .achieves {
@@ -741,6 +756,9 @@
     margin-bottom: 100px;
   }
   .cont3 .center .cont3_propertiesWrap .view .properties .pp_img img {
+    height: 340px;
+  }
+  .cont3 .center .cont3_propertiesWrap .view .properties .pp_img .noimg {
     height: 340px;
   }
   .cont3 .center .ppBtns {

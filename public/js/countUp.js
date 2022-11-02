@@ -38,10 +38,9 @@ let countValue = [
     }
 ];
 
-let cont5Start = document.querySelector(".cont4").offsetTop;
-console.log(cont5Start);
 let test = true
 window.addEventListener("scroll",function(){
+    let cont5Start = document.querySelector(".cont4").offsetTop -90;
     let scTop = window.scrollY;
     if(scTop >= cont5Start){
         if(test == true){

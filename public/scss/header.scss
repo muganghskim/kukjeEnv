@@ -4,7 +4,14 @@ a{text-decoration: none;}
 ul,ol,li{list-style: none;}
 input{outline: none;}
 textarea{resize: none; outline: none;}
-body{line-height: 1;}
+body{line-height: 1;
+    &::-webkit-scrollbar{width: 10px;}
+    &::-webkit-scrollbar-thumb{
+        background: brown;
+        border-radius: 5px;
+    }
+}
+
 
 #header{
     .h-top{
