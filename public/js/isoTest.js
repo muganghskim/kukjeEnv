@@ -24,6 +24,7 @@ let iso = new Isotope( elem, {
     itemSelector: '.all',
     layoutMode: 'masonry'
 });
+let locationW = ["Seoul","Hawaii","Paris","Dokyo","London","Hanoi","Newyork"]
 //박스 생성
 boxGen.forEach(function(item,index){
     item.innerHTML = `<div class="boxBg">
@@ -35,5 +36,6 @@ boxGen.forEach(function(item,index){
                             </div>
                         </a>
                       </div>
+                      <p class="locationW">${locationW[index]}</p>
                       <img src="img/portfolio${index+1}.jpg">`
 });

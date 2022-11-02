@@ -258,6 +258,14 @@
   width: 31.333333%;
   margin: 1%;
 }
+.cont5 .center .girdWrap .grid .all .locationW {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
 .cont5 .center .girdWrap .grid .all img {
   width: 100%;
   height: 100%;
