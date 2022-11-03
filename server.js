@@ -279,3 +279,34 @@ app.get("/deletecomment/:no",function(req,res){
         });
     });
 });
+
+//마이페이지(회원정보 수정) 페이지 요청 경로
+app.get("/mypage",function(req,res){
+    res.render("mypage",{userData:req.user});
+  });
+
+  //마이페이지에서 입력한 데이터를 db에 수정반영 처리
+  app.post("/myupdate",function(req,res){
+    //회원정보 콜렉션에 접근해서 해당 아이디에 맞는 
+    //비번 닉네임 이메일 주소 전화번호 수정한 것 변경처리 updateOne
+
+    //원래는 mypage.ejs파일에서 원래 비밀번호 입력창과 /변경할 비밀번호 입력창
+    //조건문으로 db에 있는 비밀번호와 mypage에서 입력한 원래 비밀번호가 일치하면
+    //db 에 있는 비번 find
+
+    if(req.body.originpass === req.user.joinpass){
+    db.collection("portfolio_join").findOne({joinpass:req.body.originpass},function(err,result){
+        if(result){
+            db.collection("portfolio_join").updateOne({joinid:req.user.joinid},{$set:{
+                joinpass:req.body.userpass,
+                joinnick:req.body.usernick
+            }},function(err,result){
+                res.redirect("/");
+            });
+        }
+        else{
+            res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/mypage'; </script>");
+        }
+    });
+    }
+  });

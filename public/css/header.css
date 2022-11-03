@@ -80,6 +80,9 @@ body::-webkit-scrollbar-thumb {
 #header .h-bot .center .gnb > li a {
   color: #555;
 }
+#header .h-bot .center .gnb > li a:hover {
+  color: brown;
+}
 #header .h-bot .center .gnb > li .depth {
   position: absolute;
   left: -20px;
@@ -128,6 +131,18 @@ body::-webkit-scrollbar-thumb {
 }
 .hbgMenu .nav .xBtn span {
   cursor: pointer;
+}
+.hbgMenu .nav .joinWrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.hbgMenu .nav .joinWrap a {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.hbgMenu .nav .joinWrap a i {
+  margin-right: 5px;
 }
 .hbgMenu .nav .hbgGnb {
   margin: 120px 0 300px 80px;

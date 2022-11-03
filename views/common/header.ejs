@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/brdlist.css">
     <link rel="stylesheet" href="/css/brdinsert.css">
     <link rel="stylesheet" href="/css/brddetail.css">
+    <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
                         <a href="/login"><i class="fa-solid fa-arrow-right"></i>Login</a>
                         <a href="/join"><i class="fa-solid fa-user"></i>Register</a>
                     <% } else { %>
-                        <a class="username"><%- userData.joinnick %>님</a>
+                        <a class="username" href="/mypage"><%- userData.joinnick %>님</a>
                         <a class="logout" href="/logout">Logout</a>
                     <% } %>
                 </div>
@@ -38,7 +39,7 @@
             <div class="center">
                 <h1 class="logo"><a href="/"><img class="logoImg" src="/img/logo.png"></a></h1>
                 <ul class="gnb">
-                    <li class="depthWrap"><a id="index" class="index" href="/">Index</a>
+                    <li class="depthWrap"><a id="index" class="index" href="/">Index <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="depth">
                             <li class="liMove"><a href="#">Recently</a></li>
                             <li class="liMove"><a href="#">Palces</a></li>
@@ -59,7 +60,7 @@
                         <a href="/login"><i class="fa-solid fa-arrow-right"></i>Login</a>
                         <a href="/join"><i class="fa-solid fa-user"></i>Register</a>
                     <% } else { %>
-                        <a class="username"><%- userData.joinnick %>님</a>
+                        <a class="username" href="/mypage"><%- userData.joinnick %>님</a>
                         <a class="logout" href="/logout">Logout</a>
                     <% } %>
                 </div>
@@ -70,6 +71,15 @@
         <div class="operci"></div>
         <div class="nav">
             <div class="xBtn"><span>x</span></div>
+            <div class="joinWrap">
+                <% if(!userData){ %>
+                    <a href="/login"><i class="fa-solid fa-arrow-right"></i>Login</a>
+                    <a href="/join"><i class="fa-solid fa-user"></i>Register</a>
+                <% } else { %>
+                    <a class="username" href="/mypage"><%- userData.joinnick %>님</a>
+                    <a class="logout" href="/logout">Logout</a>
+                <% } %>
+            </div>
             <ul class="hbgGnb">
                 <li class="depthWrap2"><a class="index" href="/">Index</a>
                     <ul class="depth2">

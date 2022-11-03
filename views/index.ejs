@@ -8,9 +8,9 @@
               <!-- Slides -->
                 <div class="swiper-slide s1">
                     <div class="slide-context">
-                        <h2>Amass House Find Your Home</h2>
-                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
-                        <div class="contextBtns">
+                        <h2 data-aos="fade-left" data-aos-duration="1000">Amass House Find Your Home</h2>
+                        <p data-aos="fade-right" data-aos-duration="1000">Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <div data-aos="fade-up" data-aos-duration="1000" class="contextBtns">
                             <a class="getStartBtn" href="#">Get Stared Now</a>
                             <a class="moreBtn" href="#">Learn More</a>
                         </div>    
@@ -47,13 +47,13 @@
     </div>
     <div class="cont2">
         <div class="center">
-            <h2>WHAT ARE YOU LOOKING FOR?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">WHAT ARE YOU LOOKING FOR?</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="cont2Wrap">
-                <div class="imgWrap"><img src="/img/cont2.jpg"></div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="imgWrap"><img src="/img/cont2.jpg"></div>
                 <div class="choose_listWrap">
                 <% for(let i = 0; i < 4; i++){ %>
-                    <div class="choose_list">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="choose_list">
                         <div class="choose_icon">
                             <img src="/img/c_icon<%- i+1 %>.png">
                         </div>
@@ -69,15 +69,17 @@
     </div>
     <div class="cont3 move">
         <div class="center">
-            <h2>RECENTLY PROPERTIES</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">RECENTLY PROPERTIES</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="cont3_propertiesWrap">
                 <div class="view">
                 <% for(let i=0; i < brdData.length; i++){ %>
                     <div class="properties">
                         <div class="pp_img">
                             <% if(brdData[i].brdfile) { %>
+                            <a href="/brddetail/<%- brdData[i].brdid %>">
                             <img src="/upload/<%- brdData[i].brdfile %>">
+                            </a>
                             <p class="pp_top">FOR RENT</p>
                             <% } else {%>
                                 <div class="noimg">썸네일 없음</div>
@@ -146,8 +148,8 @@
     </div>
     <div class="cont5 move">
         <div class="center">
-            <h2>MOST POPULAR PLACES</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">MOST POPULAR PLACES</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <ul class="boxBtn">
                 <li class="on" data-btn="*"><a href="#">All</a></li>
                 <li data-btn=".asia"><a href="#">Asia</a></li>
@@ -177,11 +179,11 @@
     
     <div class="cont6 move">
         <div class="center">
-            <h2>OUR AGENT</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">OUR AGENT</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="agWrap">
                 <% for(let i=0; i < 4; i++){ %>
-                    <div class="agList">
+                    <div data-aos="fade-left" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="agList">
                         <div class="ag_imgWrap"><img src="/img/ag_<%- i + 1 %>.jpg"></div>
                         <h3>Mria Blank</h3>
                         <p>Office Manager</p>
@@ -198,8 +200,8 @@
     </div>
     <div class="cont7">
         <div class="center">
-            <h2>OUR TESTIONIAL</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">OUR TESTIONIAL</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="maintestiWrap">
                 <% for(let i=0; i < 3; i++){ %>
                     <div class="testiList">
@@ -221,23 +223,26 @@
     </div>
     <div class="cont8 move">
         <div class="center">
-            <h2>OUR BLOG</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">OUR BLOG</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
             <div class="blogWrap">
                 <% for(let i=0; i < 3; i++){ %>
-                    <div class="blogList">
-                        <div class="blog_imgWrap">
-                            <img src="/upload/home<%- i+1%>.jpg">
-                            <div class="blog_iconWrap"><img src="/img/person<%- i+1%>.png"></div>
-                            <div class="blog_day"><p>17<br><span>jan</span></p></div>
-                        </div>
-                        <ul class="blog_icon">
-                            <li>Alex Teseura</li>
-                            <li><i class="fa-regular fa-calendar-days"></i></li>
-                            <li><i class="fa-solid fa-comments"></i></li>
-                        </ul>
-                        <h3>Selling Your Real House</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                    <div data-aos="fade-up" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="blogList">
+                        <a href="/brdlist">
+                            <div class="blog_imgWrap">
+                            
+                                <img src="/upload/home<%- i+2 %>.jpg">
+                                <div class="blog_day"><p>17<br><span>jan</span></p></div>
+                                <div class="blog_iconWrap"><img src="/img/person<%- i+1%>.png"></div>
+                            </div>
+                            <ul class="blog_icon">
+                                <li>Alex Teseura</li>
+                                <li><i class="fa-regular fa-calendar-days"></i></li>
+                                <li><i class="fa-solid fa-comments"></i></li>
+                            </ul>
+                            <h3>Selling Your Real House</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                        </a>
                     </div>
                 <% } %>
             </div>
@@ -286,5 +291,9 @@
 <script src="/js/isotope.pkgd.min.js"></script>
 <!-- isotope 실행코드 -->
 <script src="/js/isoTest.js"></script>
+<script src="/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

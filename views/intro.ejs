@@ -9,18 +9,19 @@
 <div class="intro_housing">
     <div class="center">
         <video src="/img/vid1.mp4" muted controls autoplay="false"></video>
-        <div class="right_welcome">
+        <div data-aos="fade-left" data-aos-duration="1000" class="right_welcome">
             <h3>Welcome to housing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel imperdiet tortor. Cras nunc elit, placerat id molestie ac, viverra nec augue. Sed id rutrum est. Morbi ac ligula mi. Donec posuere nisl id nunc sagittis, viverra molestie dui ultrices. Aliquam et neque porta velit efficitur feugiat ac ut lorem. Vestibulum eget magna id nunc ornare pharetra.</p>
             <p>Vivamus suscipit in enim eu scelerisque. Nullam quam elit, scelerisque id egestas eu, mattis et tellus. Curabitur et rutrum diam. Fusce orci mi, dignissim non quam nec, condimentum dictum ante. Aenean vitae scelerisque est. Vestibulum quis ligula id mi ullamcorper imperdiet quis ut tellus. </p>
-            <a href="#">Read More</a>
+            <p class="ptab">Vivamus suscipit in enim eu scelerisque. Nullam quam elit, scelerisque id egestas eu, mattis et tellus. Curabitur et rutrum diam. Fusce orci mi, dignissim non quam nec, condimentum dictum ante. Aenean vitae scelerisque est. Vestibulum quis ligula id mi ullamcorper imperdiet quis ut tellus. </p>
+            <a class="ptabBtn" href="#">Read More</a>
         </div>
     </div>
 </div>
 <div class="intro_choose">
     <div class="center">
-        <h2>WHY CHOOSE US</h2>
-        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000">WHY CHOOSE US</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
         <div class="choose_listWrap">
             <% for(let i = 0; i < 9; i++){ %>
                 <div class="choose_list">
@@ -41,8 +42,8 @@
 </div>
 <div class="intro_testimonial">
     <div class="center">
-        <h2>OUR TESTIMONIAL</h2>
-        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000">OUR TESTIMONIAL</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
         <div class="testimonialWrap">
             <div class="view">
                 <% for(let i = 0; i < 3; i++){ %>
@@ -67,11 +68,11 @@
 </div>
 <div class="intro_agent">
     <div class="center">
-        <h2>OUR AGENT</h2>
-        <p>Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000">OUR AGENT</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">Aliquam ultrices, massa a tristique luctus, lorem urna pulvinar</p>
         <div class="agent_listWrap">
             <% for(let i = 0; i < 3; i++){ %>
-                <div class="agent_list">
+                <div data-aos="fade-up" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="agent_list">
                     <div class="agent_imgWrap">
                         <img src="/img/ag_<%- i+1 %>.jpg">
                     </div>
@@ -115,6 +116,15 @@
         }
     });
 
+    let ptab = document.querySelector(".ptab");
+    let ptabBtn = document.querySelector(".ptabBtn");
+
+    ptabBtn.addEventListener("click",function(e){
+        e.preventDefault();
+        ptab.style.display = "block";
+        ptabBtn.style.display = "none";
+    });
+
     let slider = document.querySelector(".view");
     let circleBtn = document.querySelectorAll(".dotBtn li");
     // 슬라이드 번호 순서값
@@ -136,6 +146,10 @@
     }
     let intro = document.querySelector(".intro");
     intro.style.color = "brown";
+</script>
+<script src="/js/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 </body>
 </html>
