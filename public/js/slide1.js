@@ -3,6 +3,7 @@ const swiper = new Swiper('.slideWrap', {
     direction: 'horizontal',
     loop: true,
     effect:"fade",
+    speed: 1000,
     
     //자동재생구간
     autoplay: {

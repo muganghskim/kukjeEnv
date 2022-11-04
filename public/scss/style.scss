@@ -59,7 +59,7 @@
                         }
                         .getStartBtn{
                             width: 210px;
-                            background-color: brown;
+                            background-color: #D99771;
                         }
                         .moreBtn{
                             width: 160px;
@@ -91,10 +91,10 @@
                 height: 20px; 
                 margin: 0 10px; 
                 background-color: #fff; 
-                opacity: 0.5;
+                opacity: 0.3;
             }
             .swiper-pagination-bullet-active{
-                background-color: brown; 
+                background-color: #D99771; 
                 opacity: 1;
             }
         }
@@ -104,12 +104,12 @@
             transform: translateY(-50%);
             background-repeat: no-repeat; 
             width: 60px; height: 60px;
-            background-color: rgba(355,355,355,0.6);
+            background-color: rgba(355,355,355,0.3);
             border-radius: 50%;
             text-align: center;
             line-height: 60px;
             z-index: 98;
-            color: brown;
+            color: #D99771;
             cursor: pointer;
         }
         .prevBtn{
@@ -195,6 +195,9 @@
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
+                            a{
+                                color: #000;
+                            }
                         }
                         p{
                             margin-left: 20px;
@@ -212,6 +215,9 @@
                                 &:first-child{
                                     border: none;
                                 }
+                                a{
+                                    color: #777;
+                                }
                             }
                         }
                     }
@@ -219,7 +225,7 @@
                         position: absolute;
                         left: 10px;
                         top: 10px;
-                        background-color: brown;
+                        background-color: #D99771;
                         color: #fff;
                         font-size: 13px;
                         padding: 5px;
@@ -357,7 +363,7 @@
 }
 
 .cont4{
-    background-image: url(/img/countbg.png);
+    background-image: url(/img/countbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -397,7 +403,7 @@
                         text-align: center;
                         background-color: #fff;
                         margin-right: 20px;
-                        color: #610509;
+                        color: #73574D;
                     }
                 }
                 .count{
@@ -415,7 +421,7 @@
                     transform: translateY(-10px);
                     i{
                         color: #fff;
-                        background-color: #610509;
+                        background-color: #73574D;
                     }
                 }
                 .count{
@@ -529,7 +535,9 @@
                     margin-bottom: 20px;
                 }
                 p{
-                    padding-bottom: 37px;
+                    font-size: 14px;
+
+                    padding: 0 10px 37px;
                     line-height: 25px;
                 }
                 .star_icon{

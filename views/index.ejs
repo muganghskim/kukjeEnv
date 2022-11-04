@@ -8,8 +8,8 @@
               <!-- Slides -->
                 <div class="swiper-slide s1">
                     <div class="slide-context">
-                        <h2 data-aos="fade-left" data-aos-duration="1000">Amass House Find Your Home</h2>
-                        <p data-aos="fade-right" data-aos-duration="1000">Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <h2 data-aos="fade-left" data-aos-duration="1000">Amass House Find Your Coffee</h2>
+                        <p data-aos="fade-right" data-aos-duration="1000">재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div data-aos="fade-up" data-aos-duration="1000" class="contextBtns">
                             <a class="getStartBtn" href="#">Get Stared Now</a>
                             <a class="moreBtn" href="#">Learn More</a>
@@ -18,8 +18,8 @@
                 </div>
                 <div class="swiper-slide s2">
                     <div class="slide-context">
-                        <h2>Amass House Find Your Home</h2>
-                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <h2>Amass House Find Your Coffee</h2>
+                        <p>재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div class="contextBtns">
                             <a class="getStartBtn" href="#">Get Stared Now</a>
                             <a class="moreBtn" href="#">Learn More</a>
@@ -28,8 +28,8 @@
                 </div>
                 <div class="swiper-slide s3">
                     <div class="slide-context">
-                        <h2>Amass House Find Your Home</h2>
-                        <p>Aenean gravida lorem nec tellus semper rhoncus.<br> Vivamus rutrum semper libero et ullamcorper.</p>
+                        <h2>Amass House Find Your Coffee</h2>
+                        <p>재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div class="contextBtns">
                             <a class="getStartBtn" href="#">Get Stared Now</a>
                             <a class="moreBtn" href="#">Learn More</a>
@@ -47,8 +47,8 @@
     </div>
     <div class="cont2">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">WHAT ARE YOU LOOKING FOR?</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">무엇을 찾고 있나요?</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">어메스 커피는 해외 명품원두들을 선별하고 신선한 재료들을 공수하여 준비합니다.</p>
             <div class="cont2Wrap">
                 <div data-aos="fade-right" data-aos-duration="1000" class="imgWrap"><img src="/img/cont2.jpg"></div>
                 <div class="choose_listWrap">
@@ -58,8 +58,8 @@
                             <img src="/img/c_icon<%- i+1 %>.png">
                         </div>
                         <div class="choose_context">
-                            <h3>Integer sit amet tincidunt</h3>
-                            <p>Nullam quam elit, scelerisque id egestas eu, sed elementum risus ante non nulla. Quisque lorem enim, bibendum vitae finibus nec</p>
+                            <h3>고품질의 원두와 다양한 재료</h3>
+                            <p>어메스 커피는 품질 좋은 원두를 선별하고 전문적인 로스팅을 통해 다양한 음료에 환상적인 맛의 커피를 제공합니다.</p>
                         </div>
                     </div>
                 <% } %>
@@ -69,8 +69,8 @@
     </div>
     <div class="cont3 move">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">RECENTLY PROPERTIES</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">최근 게시물들</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">어메스 커피에 대한 최신의 의견들입니다.</p>
             <div class="cont3_propertiesWrap">
                 <div class="view">
                 <% for(let i=0; i < brdData.length; i++){ %>
@@ -80,18 +80,18 @@
                             <a href="/brddetail/<%- brdData[i].brdid %>">
                             <img src="/upload/<%- brdData[i].brdfile %>">
                             </a>
-                            <p class="pp_top">FOR RENT</p>
+                            <p class="pp_top"><%- brdData[i].brdtime %></p>
                             <% } else {%>
                                 <div class="noimg">썸네일 없음</div>
                             <% } %>
                         </div>
                         <div class="pp_info">
                             <h3><a href="/brddetail/<%- brdData[i].brdid %>"><%- brdData[i].brdsubject %></a></h3>
-                            <p><i class="fa-solid fa-location-dot"></i>123 kathal St. Tampa City</p>
+                            <p><i class="fa-solid fa-location-dot"></i> 고양시 일산서구 덕이동#</p>
                             <ul class="room_info">
-                                <li>480 sqft</li>
-                                <li>3 Beds</li>
-                                <li>2 Baths</li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -112,35 +112,35 @@
                     <div class="icon"><i class="fa-solid fa-face-smile"></i></div>
                     <div>
                         <p class="count">0</p>
-                        <p class="achieve">Customers</p>
+                        <p class="achieve">일일 방문자</p>
                     </div>
                 </div>
                 <div class="box box2">
                     <div class="icon"><i class="fa-regular fa-note-sticky"></i></div>
                     <div>
                     <p class="count">0</p>
-                    <p class="achieve">Pages</p>
+                    <p class="achieve">방문자 리뷰</p>
                     </div>
                 </div>
                 <div class="box box3">
                     <div class="icon"><i class="fa-solid fa-trophy"></i></div>
                     <div>
                     <p class="count">0</p>
-                    <p class="achieve">Accolades</p>
+                    <p class="achieve">레시피</p>
                     </div>
                 </div>
                 <div class="box box4">
-                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
                     <div>
                         <p class="count">0</p>
-                        <p class="achieve">Code</p>
+                        <p class="achieve">사회적 기부</p>
                     </div>
                 </div>
                 <div class="box box5">
                     <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div>
                         <p class="count">0</p>
-                        <p class="achieve">Coffee</p>
+                        <p class="achieve">전국 매장</p>
                     </div>
                 </div>
             </div>
@@ -148,29 +148,29 @@
     </div>
     <div class="cont5 move">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">MOST POPULAR PLACES</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">다양한 음료와 빵들</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">모든 커피와 빵,쿠키는 신선한 재료와 청결한 환경에서 제공됩니다.</p>
             <ul class="boxBtn">
-                <li class="on" data-btn="*"><a href="#">All</a></li>
-                <li data-btn=".asia"><a href="#">Asia</a></li>
-                <li data-btn=".eu"><a href="#">EU</a></li>
-                <li data-btn=".america"><a href="#">America</a></li>
+                <li class="on" data-btn="*"><a href="#">모든 제품</a></li>
+                <li data-btn=".coffee"><a href="#">커피</a></li>
+                <li data-btn=".cookie"><a href="#">쿠키</a></li>
+                <li data-btn=".bred"><a href="#">빵</a></li>
             </ul>
             <div class="girdWrap">
                 <div class="grid">
-                    <div class="all asia small">
+                    <div class="all coffee small">
                     </div>
-                    <div class="all america small">
+                    <div class="all bred small">
                     </div>
-                    <div class="all eu small">
+                    <div class="all cookie small">
                     </div>
-                    <div class="all asia big">
+                    <div class="all coffee big">
                     </div>
-                    <div class="all eu small">
+                    <div class="all cookie small">
                     </div>
-                    <div class="all asia small">
+                    <div class="all coffee small">
                     </div>
-                    <div class="all america big">
+                    <div class="all bred big">
                     </div>
                 </div>
             </div>
@@ -179,8 +179,8 @@
     
     <div class="cont6 move">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">OUR AGENT</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">우리의 전문가</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">어메스 커피는 전문적인 셰프와 인력을 동원하여 감성적인 제품을 만들어냅니다.</p>
             <div class="agWrap">
                 <% for(let i=0; i < 4; i++){ %>
                     <div data-aos="fade-left" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="agList">
@@ -200,13 +200,17 @@
     </div>
     <div class="cont7">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">OUR TESTIONIAL</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">별점 가득 리뷰</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">많은 분들께서 어메스 커피의 섬세함과 친절함에 매료되어 별점 가득한 리뷰를 매겨 주셨습니다.</p>
             <div class="maintestiWrap">
                 <% for(let i=0; i < 3; i++){ %>
+                <% let context = ["아메리카노 시켰는데 빨대없이 그냥 마시는게 맛있다고 하셔서 한입 먹었는데 맛있더라구요! 적당한 산미와 고소함(산미있는 커피 좋아하는 1인으로서 아주 좋았습니다)",
+                                  "사진을 못찍었네요… 커피가 맛있고 사장님 센스있고 친절해요… 단 영업시간을 꼭 확인하고 가야해요~",
+                                  "특별히 라떼가 아주아주 맛있지만 오늘은 추석 후폭풍으로 다이어트 해야해서 아아를 선택 ㅠㅠ 그치만 아아도 산미 좋고 신선해요!^^"]
+                                   %>
                     <div class="testiList">
                         <div class="testi_imgWrap"><img src="/img/person<%- i+1%>.png"></div>
-                        <h3>Karen Paran</h3>
+                        <h3>김현승</h3>
                         <ul class="star_icon">
                             <li><i class="fa-solid fa-star"></i></li>
                             <li><i class="fa-solid fa-star"></i></li>
@@ -215,7 +219,7 @@
                             <li><i class="fa-solid fa-star-half-stroke"></i></li>
                             <li>(4.5 Reviews)</li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                        <p><%- context[i] %></p>
                     </div>
                 <% } %>
             </div>
@@ -223,14 +227,17 @@
     </div>
     <div class="cont8 move">
         <div class="center">
-            <h2 data-aos="fade-up" data-aos-duration="1000">OUR BLOG</h2>
-            <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante eros</p>
+            <h2 data-aos="fade-up" data-aos-duration="1000">우리의 블로그</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">어메스 커피에 대한 회원 분들의 다양한 의견과 제품 설명을 확인하세요</p>
             <div class="blogWrap">
                 <% for(let i=0; i < 3; i++){ %>
-                    <div data-aos="fade-up" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="blogList">
+                    <% let text = ["다양한 먹거리와 감성적인 제품들을 여러분들이 직접 느껴보고 포스팅 할 수 있습니다. 어메스커피와 함께 커피에 대한 의견들을 서로 공유해보세요."
+                                    ,"어메스커피에서 신선한 음료와 부드럽고 향긋한 빵들을 만나보세요. 집 근처 매장에서 커피에 대해 회원들과 의견을 나눠 보세요."
+                                    ,"높은 퀄리티의 음식들과 청결한 주방을 살펴보세요. 모두가 철저한 관리하에 안전한 환경에서 커피를 제조합니다. 직접 확인 할 수 있어요."]
+                    %>
+                        <div data-aos="fade-up" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="blogList">
                         <a href="/brdlist">
                             <div class="blog_imgWrap">
-                            
                                 <img src="/upload/home<%- i+2 %>.jpg">
                                 <div class="blog_day"><p>17<br><span>jan</span></p></div>
                                 <div class="blog_iconWrap"><img src="/img/person<%- i+1%>.png"></div>
@@ -240,8 +247,8 @@
                                 <li><i class="fa-regular fa-calendar-days"></i></li>
                                 <li><i class="fa-solid fa-comments"></i></li>
                             </ul>
-                            <h3>Selling Your Real House</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur lorem sed condimentum iaculis. Proin ut erat eget odio viverra pharetra.</p>
+                            <h3>어메스커피 블로그에 방문해주세요</h3>
+                            <p><%- text[i] %></p>
                         </a>
                     </div>
                 <% } %>

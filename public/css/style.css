@@ -61,7 +61,7 @@
 }
 #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns .getStartBtn {
   width: 210px;
-  background-color: brown;
+  background-color: #D99771;
 }
 #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns .moreBtn {
   width: 160px;
@@ -88,10 +88,10 @@
   height: 20px;
   margin: 0 10px;
   background-color: #fff;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 #cont1 .swiper .circleBtn .swiper-pagination-bullet-active {
-  background-color: brown;
+  background-color: #D99771;
   opacity: 1;
 }
 #cont1 .swiper .naviBtn {
@@ -101,12 +101,12 @@
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   text-align: center;
   line-height: 60px;
   z-index: 98;
-  color: brown;
+  color: #D99771;
   cursor: pointer;
 }
 #cont1 .swiper .prevBtn {
@@ -183,6 +183,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.cont3 .center .cont3_propertiesWrap .view .properties .pp_info h3 a {
+  color: #000;
+}
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info p {
   margin-left: 20px;
   margin-bottom: 23px;
@@ -201,11 +204,14 @@
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info li:first-child {
   border: none;
 }
+.cont3 .center .cont3_propertiesWrap .view .properties .pp_info .room_info li a {
+  color: #777;
+}
 .cont3 .center .cont3_propertiesWrap .view .properties .pp_top {
   position: absolute;
   left: 10px;
   top: 10px;
-  background-color: brown;
+  background-color: #D99771;
   color: #fff;
   font-size: 13px;
   padding: 5px;
@@ -328,7 +334,7 @@
 }
 
 .cont4 {
-  background-image: url(/img/countbg.png);
+  background-image: url(/img/countbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -373,7 +379,7 @@
   text-align: center;
   background-color: #fff;
   margin-right: 20px;
-  color: #610509;
+  color: #73574D;
 }
 .cont4 .center .achieves .box .count {
   font-size: 35px;
@@ -389,7 +395,7 @@
 }
 .cont4 .center .achieves .box:hover .icon i {
   color: #fff;
-  background-color: #610509;
+  background-color: #73574D;
 }
 .cont4 .center .achieves .box:hover .count {
   color: #fff;
@@ -492,7 +498,8 @@
   margin-bottom: 20px;
 }
 .cont7 .center .maintestiWrap .testiList p {
-  padding-bottom: 37px;
+  font-size: 14px;
+  padding: 0 10px 37px;
   line-height: 25px;
 }
 .cont7 .center .maintestiWrap .testiList .star_icon {

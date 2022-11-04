@@ -24,7 +24,7 @@ let iso = new Isotope( elem, {
     itemSelector: '.all',
     layoutMode: 'masonry'
 });
-let locationW = ["Seoul","Hawaii","Paris","Dokyo","London","Hanoi","Newyork"]
+let locationW = ["카푸치노","크루와상","바닐라 쿠키","아인슈페너","애플 페스츄리","콜드브루","바게트"]
 //박스 생성
 boxGen.forEach(function(item,index){
     item.innerHTML = `<div class="boxBg">
