@@ -64,6 +64,7 @@
                         .moreBtn{
                             width: 160px;
                             border: 1px solid #fff;
+                            box-sizing: border-box;
                         }
                     }
                 }
@@ -111,6 +112,9 @@
             z-index: 98;
             color: #D99771;
             cursor: pointer;
+            i{
+                line-height: 60px;
+            }
         }
         .prevBtn{
             left: 50px;
@@ -151,7 +155,7 @@
                     p{
                         color: #777;
                         line-height: 25px;
-                        margin: 0 0 25px 15px;
+                        margin: 0 10px 25px 15px;
                     }
                 }
                }
@@ -601,7 +605,7 @@
                         right: 15px;
                         width: 55px;
                         height: 55px;
-                        background-color: #610509;
+                        background-color: #73574D;
                         color: #fff;
                         text-align: center;
                         border-radius: 5px;
@@ -653,11 +657,14 @@
         }
         .brandWrap{
             .swiper-wrapper{
+                height: unset;
                 .swiper-slide{
                     display: flex;
                     justify-content: center;
                     img{
-                        margin: 0 5px;
+                        width: 150px;
+                        height: 50px;
+                        margin: 0 30px;
                     }
                 }
             }
@@ -676,6 +683,9 @@
                 z-index: 98;
                 color: brown;
                 cursor: pointer;
+                i{
+                    line-height: 60px;
+                }
             }
             .prevBtn{
                 left: 0px;
@@ -1049,6 +1059,9 @@
 }
 
 @media screen and (max-width:580px){
+    .right_section{
+        display: none;
+    }
     #cont1{
         .slideWrap{
             .prevBtn{

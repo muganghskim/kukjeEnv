@@ -66,6 +66,7 @@
 #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context .contextBtns .moreBtn {
   width: 160px;
   border: 1px solid #fff;
+  box-sizing: border-box;
 }
 #cont1 .slideWrap .swiper-wrapper .s1 {
   background-image: url(/img/slide01.jpg);
@@ -109,6 +110,9 @@
   color: #D99771;
   cursor: pointer;
 }
+#cont1 .swiper .naviBtn i {
+  line-height: 60px;
+}
 #cont1 .swiper .prevBtn {
   left: 50px;
 }
@@ -144,7 +148,7 @@
 .cont2 .center .cont2Wrap .choose_listWrap .choose_list .choose_context p {
   color: #777;
   line-height: 25px;
-  margin: 0 0 25px 15px;
+  margin: 0 10px 25px 15px;
 }
 
 .cont3 .center .cont3_propertiesWrap {
@@ -552,7 +556,7 @@
   right: 15px;
   width: 55px;
   height: 55px;
-  background-color: #610509;
+  background-color: #73574D;
   color: #fff;
   text-align: center;
   border-radius: 5px;
@@ -599,12 +603,17 @@
   padding-top: 50px;
   padding-bottom: 30px;
 }
+#cont9 .center .brandWrap .swiper-wrapper {
+  height: unset;
+}
 #cont9 .center .brandWrap .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
 }
 #cont9 .center .brandWrap .swiper-wrapper .swiper-slide img {
-  margin: 0 5px;
+  width: 150px;
+  height: 50px;
+  margin: 0 30px;
 }
 #cont9 .center .swiper .naviBtn {
   position: absolute;
@@ -620,6 +629,9 @@
   z-index: 98;
   color: brown;
   cursor: pointer;
+}
+#cont9 .center .swiper .naviBtn i {
+  line-height: 60px;
 }
 #cont9 .center .swiper .prevBtn {
   left: 0px;
@@ -854,6 +866,9 @@
   }
 }
 @media screen and (max-width: 580px) {
+  .right_section {
+    display: none;
+  }
   #cont1 .slideWrap .prevBtn {
     left: 5px;
   }

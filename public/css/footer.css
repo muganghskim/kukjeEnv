@@ -1,7 +1,7 @@
 #footer .f-top {
   display: flex;
   justify-content: center;
-  background-color: #7A060B;
+  background-color: #A6877C;
 }
 #footer .f-top .center {
   width: 1110px;
@@ -30,7 +30,7 @@
 #footer .f-top .center .subscribe ul li {
   width: 45px;
   height: 45px;
-  background-color: #610509;
+  background-color: #73574D;
   margin-right: 5px;
   line-height: 45px;
   text-align: center;
@@ -40,10 +40,13 @@
   width: 100%;
   color: #fff;
 }
+#footer .f-top .center .subscribe ul li a i {
+  line-height: 45px;
+}
 #footer .f-bot {
   display: flex;
   justify-content: center;
-  background-color: #610509;
+  background-color: #73574D;
 }
 #footer .f-bot .center {
   width: 1110px;

@@ -1,4 +1,11 @@
-
+<div class="right_section">
+    <ul class="sections">
+        <li class="liMove"><a href="#">최근 게시물</a></li>
+        <li class="liMove"><a href="#">메뉴 갤러리</a></li>
+        <li class="liMove"><a href="#">전문가들</a></li>
+        <li class="liMove"><a href="#">블로그</a></li>
+    </ul>
+</div>
 <%- include("common/header") %>
 <div id="container">
     <div id="cont1">
@@ -8,31 +15,31 @@
               <!-- Slides -->
                 <div class="swiper-slide s1">
                     <div class="slide-context">
-                        <h2 data-aos="fade-left" data-aos-duration="1000">Amass House Find Your Coffee</h2>
+                        <h2 data-aos="fade-left" data-aos-duration="1000">어메스 커피가 당신의 커피를 찾아드립니다.</h2>
                         <p data-aos="fade-right" data-aos-duration="1000">재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div data-aos="fade-up" data-aos-duration="1000" class="contextBtns">
-                            <a class="getStartBtn" href="#">Get Stared Now</a>
-                            <a class="moreBtn" href="#">Learn More</a>
+                            <a class="getStartBtn" href="#">지금 시작하기</a>
+                            <a class="moreBtn" href="#">더 찾아보기</a>
                         </div>    
                     </div>
                 </div>
                 <div class="swiper-slide s2">
                     <div class="slide-context">
-                        <h2>Amass House Find Your Coffee</h2>
+                        <h2>어메스 커피가 당신의 커피를 찾아드립니다.</h2>
                         <p>재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div class="contextBtns">
-                            <a class="getStartBtn" href="#">Get Stared Now</a>
-                            <a class="moreBtn" href="#">Learn More</a>
+                            <a class="getStartBtn" href="#">지금 시작하기</a>
+                            <a class="moreBtn" href="#">더 찾아보기</a>
                         </div>    
                     </div>
                 </div>
                 <div class="swiper-slide s3">
                     <div class="slide-context">
-                        <h2>Amass House Find Your Coffee</h2>
+                        <h2>어메스 커피가 당신의 커피를 찾아드립니다.</h2>
                         <p>재미와 감성을 듬뿍 담아낸 맛을 어메스커피에서 찾아보세요.<br> 어메스커피에서만 맛볼 수 있는 다양한 음료들</p>
                         <div class="contextBtns">
-                            <a class="getStartBtn" href="#">Get Stared Now</a>
-                            <a class="moreBtn" href="#">Learn More</a>
+                            <a class="getStartBtn" href="#">지금 시작하기</a>
+                            <a class="moreBtn" href="#">더 찾아보기</a>
                         </div>    
                     </div>
                 </div>
@@ -53,13 +60,15 @@
                 <div data-aos="fade-right" data-aos-duration="1000" class="imgWrap"><img src="/img/cont2.jpg"></div>
                 <div class="choose_listWrap">
                 <% for(let i = 0; i < 4; i++){ %>
+                <% let title = ["고품질의 원두와 다양한 재료","신선한 재료와 청결함","유기농 재료와 환경친화","감성적인 분위기와 장소"] %>
+                <% let context = ["어메스 커피는 품질 좋은 원두를 선별하고 전문적인 로스팅을 통해 다양한 음료에 환상적인 맛의 커피를 제공합니다.","어메스커피는 신선함을 중시하며 최상급의 재료와 제품 제조중의 청결함을 일순위로 생각합니다.","우리는 친환경적이며 지속가능한 사업을 꿈꾸며 직원들의 편의 및 고객의 소리를 경청합니다.","감성적인 인테리어와 고객의 편안함을 위해 현대적이고 단순한 분위기를 만들어냅니다."] %>    
                     <div data-aos="fade-left" data-aos-duration="1000" class="choose_list">
                         <div class="choose_icon">
                             <img src="/img/c_icon<%- i+1 %>.png">
                         </div>
                         <div class="choose_context">
-                            <h3>고품질의 원두와 다양한 재료</h3>
-                            <p>어메스 커피는 품질 좋은 원두를 선별하고 전문적인 로스팅을 통해 다양한 음료에 환상적인 맛의 커피를 제공합니다.</p>
+                            <h3><%- title[i] %></h3>
+                            <p><%- context[i] %></p>
                         </div>
                     </div>
                 <% } %>
@@ -257,24 +266,24 @@
     </div>
     <div id="cont9">
         <div class="center">
-            <h4>BRANDS AND PARTNERS</h4>
+            <h4>브랜드 및 협력사</h4>
             <div class="brandWrap swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                     <div class="swiper-slide s1">
                         <% for(let i=0; i < 5; i++){ %>
-                            <img src="/img/nobrand.png">
+                            <img src="/img/nobrand<%- i+1 %>.png">
                         <% } %>
                     </div>
                     <div class="swiper-slide s2">
                         <% for(let i=0; i < 5; i++){ %>
-                            <img src="/img/nobrand.png">
+                            <img src="/img/nobrand<%- i+1 %>.png">
                         <% } %>
                     </div>
                     <div class="swiper-slide s3">
                         <% for(let i=0; i < 5; i++){ %>
-                            <img src="/img/nobrand.png">
+                            <img src="/img/nobrand<%- i+1 %>.png">
                         <% } %>
                     </div>
                 </div>

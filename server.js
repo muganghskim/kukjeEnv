@@ -310,3 +310,21 @@ app.get("/mypage",function(req,res){
     });
     }
   });
+
+//카운트 다운 페이지 요청 시
+
+app.get("/countdown",function(req,res){
+    res.render("count");
+});
+
+// 찾아 오시는길 페이지 요청 시
+
+app.get("/mappage",function(req,res){
+    res.render("map",{userData:req.user});
+});
+
+// 레이아웃 페이지 요청 시
+
+app.get("/layout",function(req,res){
+    res.render("all");
+});

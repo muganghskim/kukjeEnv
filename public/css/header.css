@@ -26,12 +26,13 @@ textarea {
 
 body {
   line-height: 1;
+  font-family: "Noto Sans KR", sans-serif;
 }
 body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-  background: brown;
+  background: #D9CCC5;
   border-radius: 5px;
 }
 
@@ -53,7 +54,23 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 }
+.right_section .sections > li:nth-child(1) {
+  background-color: #1F1E26;
+  border-radius: 10px 0 0 0;
+}
+.right_section .sections > li:nth-child(3) {
+  background-color: #A6877C;
+}
+.right_section .sections > li:nth-child(4) {
+  background-color: #D99771;
+  border-radius: 0 0 0 10px;
+}
 .right_section .sections > li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   color: #fff;
   -ms-writing-mode: tb-rl;
       writing-mode: tb-rl;
@@ -72,6 +89,7 @@ body::-webkit-scrollbar-thumb {
 #header .h-top .center .joinWrap a {
   line-height: 40px;
   color: #fff;
+  margin-left: 15px;
 }
 #header .h-top .center .joinWrap a i {
   margin: 0 5px 0 10px;
@@ -148,10 +166,15 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 .hbgMenu .nav .xBtn {
-  text-align: right;
-  font-size: 35px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-top: 15px;
   margin-right: 15px;
+  position: relative;
+  text-align: center;
+  right: -90%;
+  width: 30px;
+  height: 35px;
 }
 .hbgMenu .nav .xBtn span {
   cursor: pointer;
@@ -162,7 +185,9 @@ body::-webkit-scrollbar-thumb {
   margin-left: 40px;
 }
 .hbgMenu .nav .joinWrap a {
-  margin-bottom: 10px;
+  display: flex;
+  width: 80px;
+  margin-bottom: 15px;
   color: #fff;
 }
 .hbgMenu .nav .joinWrap a i {
