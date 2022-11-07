@@ -281,7 +281,7 @@ app.get("/deletecomment/:no",function(req,res){
 });
 
 //마이페이지(회원정보 수정) 페이지 요청 경로
-app.get("/mypage",function(req,res){
+app.get("/my",function(req,res){
     res.render("mypage",{userData:req.user});
   });
 
@@ -319,7 +319,7 @@ app.get("/countdown",function(req,res){
 
 // 찾아 오시는길 페이지 요청 시
 
-app.get("/mappage",function(req,res){
+app.get("/map",function(req,res){
     res.render("map",{userData:req.user});
 });
 
