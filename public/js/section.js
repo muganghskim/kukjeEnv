@@ -18,11 +18,8 @@ depthWrap.addEventListener("mouseleave",function(){
 });
 
 //hbg드롭 다운 메뉴 등장
-depthWrap2.addEventListener("mouseenter",function(){
-    depth2.style.height = "60px";
-});
-depthWrap2.addEventListener("mouseleave",function(){
-    depth2.style.height = "0px";
+depthWrap2.addEventListener("click",function(){
+    depth2.classList.toggle("on");
 });
 
 let secStart = [];

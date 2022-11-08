@@ -216,6 +216,9 @@ body::-webkit-scrollbar-thumb {
   text-indent: 10px;
   width: 100px;
 }
+.hbgMenu .nav .hbgGnb .depthWrap2 .depth2.on {
+  height: 90px;
+}
 .hbgMenu .nav .hbgGnb li:hover {
   list-style: circle;
 }
