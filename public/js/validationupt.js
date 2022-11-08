@@ -24,12 +24,12 @@ submitBtn.addEventListener("click",function(e){
         messages[0].style.color = "red";
     }
     if(checkComplete4){
-        messages[2].innerHTML = "비밀번호를 형식에 맞게 입력하였습니다.";
-        messages[2].style.color = "green";
+        messages[1].innerHTML = "비밀번호를 형식에 맞게 입력하였습니다.";
+        messages[1].style.color = "green";
     }
     else{
-        messages[2].innerHTML = "비밀번호는 영문 숫자 특수기호 조합 8자리 이상 25자리 이하만 가능합니다.";
-        messages[2].style.color = "red";
+        messages[1].innerHTML = "비밀번호는 영문 숫자 특수기호 조합 8자리 이상 25자리 이하만 가능합니다.";
+        messages[1].style.color = "red";
     }
     if(checkComplete1 && checkComplete4){
         result.submit();

@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 50px;
 }
 #header .h-bot .center .logo img {
-  width: 110px;
+  width: 90px;
   height: 70px;
 }
 #header .h-bot .center .gnb {
@@ -268,7 +268,7 @@ body::-webkit-scrollbar-thumb {
 #header.fixed .h-bot .center .joinWrap a {
   line-height: 40px;
   color: #fff;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 #header.fixed .h-bot .center .joinWrap a i {
   margin: 0 5px 0 10px;
@@ -280,6 +280,9 @@ body::-webkit-scrollbar-thumb {
   }
   #header .h-bot .center {
     width: 77.5%;
+  }
+  #header .h-bot .center .gnb > li {
+    margin: 0 15px;
   }
 }
 @media screen and (max-width: 1000px) {

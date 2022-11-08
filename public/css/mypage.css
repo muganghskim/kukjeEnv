@@ -1,0 +1,49 @@
+.mypage {
+  display: flex;
+  justify-content: center;
+}
+.mypage .center {
+  width: 1200px;
+  text-align: center;
+}
+.mypage .center h2 {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.mypage .center #myupt {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+}
+.mypage .center #myupt .userid {
+  text-align: start;
+  background-color: #f8f8f8;
+  margin: 0 auto 40px;
+}
+.mypage .center #myupt .userid, .mypage .center #myupt input {
+  width: 375px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+.mypage .center #myupt p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+.mypage .center #myupt #submitBtn {
+  width: 140px;
+  height: 50px;
+  margin: 50px auto 100px;
+  font-size: 14px;
+  background-color: #1F1E26;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}

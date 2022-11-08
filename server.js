@@ -295,9 +295,9 @@ app.get("/my",function(req,res){
     //db 에 있는 비번 find
 
     if(req.body.originpass === req.user.joinpass){
-    db.collection("portfolio_join").findOne({joinpass:req.body.originpass},function(err,result){
+    db.collection("portfolio1_join").findOne({joinpass:req.body.originpass},function(err,result){
         if(result){
-            db.collection("portfolio_join").updateOne({joinid:req.user.joinid},{$set:{
+            db.collection("portfolio1_join").updateOne({joinid:req.user.joinid},{$set:{
                 joinpass:req.body.userpass,
                 joinnick:req.body.usernick
             }},function(err,result){
@@ -305,9 +305,12 @@ app.get("/my",function(req,res){
             });
         }
         else{
-            res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/mypage'; </script>");
+            res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/my'; </script>");
         }
     });
+    }
+    else{
+        res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/my'; </script>");
     }
   });
 

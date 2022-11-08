@@ -420,4 +420,18 @@
             width: 94%;
         }
     }
+    .intro_testimonial{
+        .center{
+            margin: 0 auto;
+            width: 80%;
+            .testimonialWrap{
+                width: 65%;
+                .dotBtn{
+                    li{
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
 }

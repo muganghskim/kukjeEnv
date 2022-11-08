@@ -84,7 +84,7 @@ body{line-height: 1;
             .logo{
                 margin-top: 10px;
                 img{
-                    width: 110px;
+                    width: 90px;
                     height: 70px;
                 }
                 margin-right: 50px;
@@ -251,7 +251,7 @@ body{line-height: 1;
                 a{
                     line-height: 40px;
                     color: #fff;
-                    margin-left: 5px;
+                    margin-left: 15px;
                     i{
                         margin: 0 5px 0 10px;
                     }
@@ -271,6 +271,11 @@ body{line-height: 1;
         .h-bot{
             .center{
                 width: 77.5%;
+                .gnb{
+                    > li{
+                        margin: 0 15px;
+                    }
+                }
             }
         }
     }

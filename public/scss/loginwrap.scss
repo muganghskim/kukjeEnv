@@ -139,5 +139,20 @@ body{line-height: 1; font-family: 'Noto Sans KR', sans-serif;}
             }
         }
     }
+}
+
+@media screen and (max-width:580px){
+    .loginWrap{
+        .center{
+            width: 80%;
+            .formWrap{
+                form{
+                    input{
+                        width: 80%;
+                    }
+                }           
+            }
+        }
+    }
     
 }

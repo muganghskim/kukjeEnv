@@ -368,4 +368,14 @@
   .intro_agent .center {
     width: 94%;
   }
+  .intro_testimonial .center {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .intro_testimonial .center .testimonialWrap {
+    width: 65%;
+  }
+  .intro_testimonial .center .testimonialWrap .dotBtn li {
+    margin-top: 50px;
+  }
 }
