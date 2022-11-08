@@ -50,7 +50,7 @@
   text-align: center;
   font-size: 12px;
   line-height: 30px;
-  background-color: blueviolet;
+  background-color: #D99771;
   color: #fff;
   border-radius: 5px;
   margin-right: 5px;
@@ -61,7 +61,7 @@
   text-align: center;
   font-size: 12px;
   line-height: 30px;
-  background-color: brown;
+  background-color: #73574D;
   color: #fff;
   border-radius: 5px;
 }
@@ -86,7 +86,7 @@
   padding-top: 25px;
 }
 .gridWrap .grid_list .list_info h3 a {
-  color: brown;
+  color: #232323;
 }
 .gridWrap .grid_list .list_info p {
   font-size: 12px;
@@ -126,7 +126,7 @@
   text-align: center;
   border-radius: 15px;
   margin: 0 auto 100px;
-  background-color: brown;
+  background-color: #73574D;
 }
 .brdinsertBtn a {
   display: block;

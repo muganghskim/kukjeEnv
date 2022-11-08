@@ -51,6 +51,7 @@
 }
 .detail_center .comment_box .wrap {
   display: flex;
+  margin: 15px 0;
 }
 .detail_center .comment_box .wrap .comment_icon img {
   width: 60px;
@@ -80,7 +81,7 @@
   color: #fff;
   margin-right: 10px;
   margin-bottom: 10px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .detail_center .comment_box .comment_btn .del_comment {
   background-color: brown;
@@ -105,7 +106,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 50%;
+  border-radius: 10%;
   cursor: pointer;
 }
 .detail_center .comment_box .comupdate_form .btnWrap .comment_no {
@@ -134,7 +135,7 @@
   background-color: #999;
   color: #fff;
   border: none;
-  border-radius: 50%;
+  border-radius: 10%;
   cursor: pointer;
 }
 
