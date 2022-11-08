@@ -72,13 +72,15 @@
         <p data-aos="fade-up" data-aos-duration="1000">전문적인 로스팅을 통해 다양한 음료에 환상적인 맛의 커피를 제공합니다.</p>
         <div class="agent_listWrap">
             <% for(let i = 0; i < 3; i++){ %>
+            <% let master = ["셰프","오피스 매니저","마케팅 디렉터"] %>
+            <% let name = ["이민수","박민수","김민수"] %>
                 <div data-aos="fade-up" data-aos-delay="<%- 200 * (i+1) %>" data-aos-duration="1000" class="agent_list">
                     <div class="agent_imgWrap">
                         <img src="/img/ag_<%- i+1 %>.jpg">
                     </div>
                     <div class="list_context">
-                        <p>SUPPORT MANAGER</p>
-                        <h3>Karen Paran</h3>
+                        <p><%- master %></p>
+                        <h3><%- name %></h3>
                         <ul>
                             <li><i class="fa-solid fa-envelope"></i> rhgustmfrh@naver.com</li>
                             <li><i class="fa-solid fa-phone"></i> +82 41x-8191-8151</li>
