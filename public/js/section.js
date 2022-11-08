@@ -1,6 +1,7 @@
 const header = document.querySelector("#header");
 const logo = document.querySelector(".logoImg");
 const move = document.querySelectorAll(".move");
+const gnb = document.querySelector(".gnb > li")
 const liMove = document.querySelectorAll(".liMove");
 const hbgMenu = document.querySelector(".hbgMenu");
 const depthWrap2 = document.querySelector(".depthWrap2");
@@ -25,7 +26,6 @@ depthWrap2.addEventListener("mouseleave",function(){
 });
 
 let secStart = [];
-index.style.color = "brown";
 
 window.addEventListener("scroll",function(){
     let cont2Start = document.querySelector(".h-bot").offsetTop;
@@ -38,24 +38,12 @@ window.addEventListener("scroll",function(){
     if(scTop >= (cont2Start)){
         header.classList.add("fixed");
         logo.setAttribute("src","/img/logo_w.png");
-        index.style.color = "#fff";
     }
     else{
         header.classList.remove("fixed");
         logo.setAttribute("src","/img/logo.png");
-        index.style.color = "brown";
     }
 
-    for(let i=0; i<gnb.length; i++){
-        if(scTop >= secStart[i]){
-            for(let j=0; j<gnb.length; j++){
-                gnb[j].classList.remove("on");
-                hbgGnb[j].classList.remove("on");
-            }
-            gnb[i].classList.add("on");
-            hbgGnb[i].classList.add("on");
-        }
-    }
 });
 
 //gnb 클릭시 구역별로 나타내기

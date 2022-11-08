@@ -869,6 +869,16 @@
   .right_section {
     display: none;
   }
+  #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context {
+    width: 65%;
+  }
+  #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context h2 {
+    font-size: 20px;
+  }
+  #cont1 .slideWrap .swiper-wrapper .swiper-slide .slide-context p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
   #cont1 .slideWrap .prevBtn {
     left: 5px;
   }

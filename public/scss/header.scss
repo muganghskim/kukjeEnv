@@ -11,6 +11,7 @@ body{line-height: 1;
         border-radius: 5px;
     }
     font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
 }
 
 .right_section{
@@ -276,6 +277,9 @@ body{line-height: 1;
 }
 
 @media screen and (max-width:1000px){
+    .right_section{
+        display: none;
+    }
     #header{
         .h-top{
             .center{
@@ -350,7 +354,18 @@ body{line-height: 1;
                     display: none;
                 }
             }
+            .xBtn{
+                right: -80%;
+            }
         }
+        .hbgGnb{
+            > li{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+        
     }
 }
 

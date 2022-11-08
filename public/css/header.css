@@ -27,6 +27,7 @@ textarea {
 body {
   line-height: 1;
   font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 10px;
@@ -282,6 +283,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 1000px) {
+  .right_section {
+    display: none;
+  }
   #header .h-top .center {
     width: 69.2%;
   }
@@ -332,6 +336,12 @@ body::-webkit-scrollbar-thumb {
   }
   .hbgMenu .nav .hbgFoot .hbgCopy {
     display: none;
+  }
+  .hbgMenu .nav .xBtn {
+    right: -80%;
+  }
+  .hbgMenu .hbgGnb > li a {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 580px) {

@@ -1,6 +1,19 @@
+.gridTitle{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    h2{
+        padding-top: 100px;
+    }
+    > p{
+        margin-top: 25px;
+        margin-bottom: 42px;
+        color: #777;
+    }
+}
 .gridWrap{
     width: 1110px;
-    margin: 180px auto;
+    margin: 100px auto;
     display: flex;
     flex-wrap: wrap;
     .grid_list{

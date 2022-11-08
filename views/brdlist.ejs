@@ -5,6 +5,10 @@
         <p>메인 / 제품 소개 및 게시판</p>
     </div>
 </div>
+<div class="gridTitle">
+    <h2>회원 갤러리</h2>
+    <p>어메스 커피에 대한 회원 분들의 다양한 의견과 제품 설명을 확인하세요</p>
+</div>
 <div class="gridWrap">
     <% for(let i=0; i < brdData.length; i++){ %>
         <div class="grid_list">
@@ -44,10 +48,6 @@
 <div class="brdinsertBtn"><a href="/brdinsert">게시글 작성</a></div>
 <%- include("common/footer") %>
 <!-- 구역이동 및 햄버거 메뉴 -->
-<script src="/js/subsection.js"></script>
-<script>
-    let brdlist = document.querySelector(".brdlist");
-    brdlist.style.color = "brown";
-</script>
+<script src="/js/section.js"></script>
 </body>
 </html>
