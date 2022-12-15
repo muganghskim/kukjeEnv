@@ -9,7 +9,7 @@ const momentTimezone = require("moment-timezone");
 const multer = require("multer");
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 app.set("view engine","ejs");
 app.use(express.urlencoded({extended: true}));
@@ -294,7 +294,6 @@ app.get("/my",function(req,res){
     //조건문으로 db에 있는 비밀번호와 mypage에서 입력한 원래 비밀번호가 일치하면
     //db 에 있는 비번 find
 
-    if(req.body.originpass === req.user.joinpass){
     db.collection("portfolio1_join").findOne({joinpass:req.body.originpass},function(err,result){
         if(result){
             db.collection("portfolio1_join").updateOne({joinid:req.user.joinid},{$set:{
@@ -308,10 +307,6 @@ app.get("/my",function(req,res){
             res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/my'; </script>");
         }
     });
-    }
-    else{
-        res.send("<script>alert('원래 비밀번호를 제대로 입력해주세요'); location.href='/my'; </script>");
-    }
   });
 
 //카운트 다운 페이지 요청 시
