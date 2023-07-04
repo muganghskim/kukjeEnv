@@ -28,8 +28,12 @@
             <div class="center">
                 <div class="joinWrap">
                     <% if(!userData){ %>
-                        <a href="/login"><i class="fa-solid fa-arrow-right"></i>로그인</a>
-                        <a href="/join"><i class="fa-solid fa-user"></i>회원가입</a>
+                        <a href="/login">
+                            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                        </a>
+                        <a href="/join">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                        </a>
                     <% } else { %>
                         <a class="username" href="/my"><%- userData.joinnick %>님</a>
                         <a class="logout" href="/logout">로그아웃</a>
@@ -41,14 +45,14 @@
             <div class="center">
                 <h1 class="logo"><a href="/"><img class="logoImg" src="/img/logo.png"></a></h1>
                 <ul class="gnb">
-                    <li class="depthWrap"><a id="index" class="index" href="/">어메스커피</a>
+                    <li class="depthWrap"><a id="index" class="index" href="/">친환경업체</a>
                         <ul class="depth">
                             <li><a href="/countdown">이벤트</a></li>
                             <li><a href="/layout">전체보기</a></li>
                         </ul>
                     </li>
-                    <li><a class="intro" href="/intro">커피소개</a></li>
-                    <li><a class="brdlist" href="/brdlist">메뉴</a></li>
+                    <li><a class="intro" href="/intro">친환경소개</a></li>
+                    <li><a class="brdlist" href="/brdlist">가정용폐기물</a></li>
                     <li><a class="mappage" href="/map">찾아 오시는길</a></li>
                 </ul>
                 <div class="hbgBtn">
@@ -58,8 +62,12 @@
                 </div>
                 <div class="joinWrap">
                     <% if(!userData){ %>
-                        <a href="/login"><i class="fa-solid fa-arrow-right"></i>로그인</a>
-                        <a href="/join"><i class="fa-solid fa-user"></i>회원가입</a>
+                        <a href="/login">
+                            <!-- <i class="fa-solid fa-arrow-right"></i>로그인 -->
+                        </a>
+                        <a href="/join">
+                            <!-- <i class="fa-solid fa-user"></i>회원가입 -->
+                        </a>
                     <% } else { %>
                         <a class="username" href="/my"><%- userData.joinnick %>님</a>
                         <a class="logout" href="/logout">로그아웃</a>
@@ -74,23 +82,27 @@
             <div class="xBtn"><span>x</span></div>
             <div class="joinWrap">
                 <% if(!userData){ %>
-                    <a href="/login"><i class="fa-solid fa-arrow-right"></i>로그인</a>
-                    <a href="/join"><i class="fa-solid fa-user"></i>회원가입</a>
+                    <a href="/login">
+                        <!-- <i class="fa-solid fa-arrow-right"></i>로그인 -->
+                    </a>
+                    <a href="/join">
+                        <!-- <i class="fa-solid fa-user"></i>회원가입 -->
+                    </a>
                 <% } else { %>
                     <a class="username" href="/my"><%- userData.joinnick %>님</a>
                     <a class="logout" href="/logout">로그아웃</a>
                 <% } %>
             </div>
             <ul class="hbgGnb">
-                <li class="depthWrap2"><a class="index" href="#">어메스커피</a>
+                <li class="depthWrap2"><a class="index" href="#">친환경업체</a>
                     <ul class="depth2">
                         <li><a href="/">홈페이지</a></li>
                         <li><a href="/countdown">이벤트</a></li>
                         <li><a href="/layout">전체보기</a></li>
                     </ul>
                 </li>
-                <li><a class="intro" href="/intro">커피소개</a></li>
-                <li><a class="brdlist" href="/brdlist">메뉴</a></li>
+                <li><a class="intro" href="/intro">친환경소개</a></li>
+                <li><a class="brdlist" href="/brdlist">가정용폐기물</a></li>
                 <li><a class="mappage" href="/map">찾아 오시는길</a></li>
             </ul>
             <div class="hbgFoot">

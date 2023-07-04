@@ -1,0 +1,104 @@
+#footer .f-top {
+  display: flex;
+  justify-content: center;
+  background-color: #A6877C;
+}
+#footer .f-top .center {
+  width: 1110px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 85px;
+}
+#footer .f-top .center > div h3 {
+  margin-top: 85px;
+  margin-bottom: 38px;
+}
+#footer .f-top .center > div p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+#footer .f-top .center .f-Qlinks ul li {
+  margin-bottom: 20px;
+}
+#footer .f-top .center .f-Qlinks ul li a {
+  color: #fff;
+}
+#footer .f-top .center .subscribe ul {
+  display: flex;
+}
+#footer .f-top .center .subscribe ul li {
+  width: 45px;
+  height: 45px;
+  background-color: #73574D;
+  margin-right: 5px;
+  line-height: 45px;
+  text-align: center;
+}
+#footer .f-top .center .subscribe ul li a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+#footer .f-top .center .subscribe ul li a i {
+  line-height: 45px;
+}
+#footer .f-bot {
+  display: flex;
+  justify-content: center;
+  background-color: #73574D;
+}
+#footer .f-bot .center {
+  width: 1110px;
+  color: #fff;
+}
+#footer .f-bot .center .copy p {
+  text-align: center;
+  line-height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  #footer .f-top .center {
+    width: 77.5%;
+  }
+  #footer .f-bot .center {
+    width: 77.5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #footer .f-top .center {
+    width: 69.2%;
+    flex-wrap: wrap;
+  }
+  #footer .f-top .center > div {
+    width: 47.69%;
+  }
+  #footer .f-bot .center {
+    width: 69.2%;
+  }
+  #footer .f-bot .center .copy p {
+    padding: 30px 0;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer .f-top .center {
+    width: 66.6%;
+  }
+  #footer .f-bot .center {
+    width: 66.6%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #footer .f-top .center {
+    width: 94%;
+    flex-direction: column;
+  }
+  #footer .f-bot .center {
+    width: 94%;
+  }
+  #footer .f-bot .center .copy p {
+    padding: 30px 0;
+    line-height: 26px;
+  }
+}/*# sourceMappingURL=footer.css.map */
